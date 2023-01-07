@@ -1,16 +1,16 @@
 import { Link } from 'react-router-dom';
 
 function dropdown() {
-    const dropdownItems = document.querySelector(".dropdown-items")
+    const dropdownBttn = document.querySelector(".dropdown-bttn");
+    const dropdownItems = document.querySelector(".dropdown-items");
 
-    if (dropdownItems.style.display === "block")
-        dropdownItems.style.display = "none";
-    else
-        dropdownItems.style.display = "block";
+    dropdownBttn.addEventListener("mouseover", () => { dropdownItems.style.display = "block" });
+    dropdownBttn.addEventListener("click", () => { dropdownItems.style.display = "block" });
+    dropdownItems.addEventListener("mouseover", () => { dropdownItems.style.display = "block" });
+
+    dropdownBttn.addEventListener("mouseout", () => { dropdownItems.style.display = "none" });
+    dropdownItems.addEventListener("mouseout", () => { dropdownItems.style.display = "none" });
 }
-
-//onMouseEnter={dropdown} onMouseOut={dropdown} onClick={dropdown}
-//onMouseEnter={dropdown} onMouseLeave={dropdown}
 
 export default function Navbar() {
     return (
@@ -21,15 +21,14 @@ export default function Navbar() {
                 <Link to="/" className="hover:border-b-4 border-black sm:mr-4 mr-3">Home</Link>
                 <Link to="/" className="hover:border-b-4 border-black sm:mr-4 mr-3">About</Link>
                 <div className="cursor-pointer">
-                    <div className="dropdown-bttn flex items-center" 
-                        >
+                    <div className="dropdown-bttn flex items-center" onMouseEnter={dropdown} onMouseOut={dropdown} onClick={dropdown}>
                         Products<span className="material-symbols-outlined">expand_more</span>
                     </div>
-                    <div 
-                        className="dropdown-items font-normal z-[1] bg-white shadow-lg w-[140%] bg-neutral-100 ml-[-20px]">
-                        <Link to="/coffee" className="mt-3 py-2 text-center w-full hover:bg-neutral-200 hover:font-bold">Coffee</Link>
-                        <Link to="/" className="mt-3 py-2 text-center w-full hover:bg-neutral-200 hover:font-bold">Tea</Link>
-                        <Link to="/" className="my-3 py-2 text-center w-full hover:bg-neutral-200 hover:font-bold">Energy Drinks</Link>
+                    <div className="dropdown-items absolute hidden font-normal z-[1] bg-white shadow-lg bg-neutral-100 ml-[-35px] p-3"
+                        onMouseEnter={dropdown} onMouseOut={dropdown}>
+                        <Link to="/coffee" className="block mt-3 py-2 text-center hover:bg-neutral-200 p-3">Coffee</Link>
+                        <Link to="/" className="block mt-3 py-2 text-center hover:bg-neutral-200 p-3">Tea</Link>
+                        <Link to="/" className="block my-3 py-2 text-center hover:bg-neutral-200 p-3">Energy Drinks</Link>
                     </div>
                 </div>
                 <Link to="/" className="hover:border-b-4 border-black">Contract</Link>
