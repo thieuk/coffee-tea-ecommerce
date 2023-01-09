@@ -14,9 +14,9 @@ function dropdown() {
 
 export default function Navbar() {
     return (
-        <nav className="sticky top-0 flex items-center h-[65px] shadow-lg pl-5 bg-white">
-            <Link to="/"><img src={require("../img/logo.png")} alt="logo" className="md:w-[50px] w-[35px]"/></Link>
-            <Link to="/" className="lg:text-xl text-lg font-bold md:block hidden">CAFFINE DRINKS</Link>
+        <nav className="sticky top-0 flex items-center h-[65px] shadow-lg bg-white">
+            <Link to="/"><img src={require("../img/logo.png")} alt="logo" className="md:w-[50px] w-[35px] ml-5 mr-3"/></Link>
+            <Link to="/" className="lg:text-xl text-lg font-bold md:block hidden">COFFEE & TEA</Link>
             <div className="flex items-center ml-auto sm:gap-9 md:gap-5 gap-2 font-bold sm:text-base text-xs">
                 <Link to="/" className="hover:border-b-4 border-black sm:mr-4 mr-3">Home</Link>
                 <Link to="/" className="hover:border-b-4 border-black sm:mr-4 mr-3">About</Link>
@@ -28,7 +28,7 @@ export default function Navbar() {
                         onMouseEnter={dropdown} onMouseOut={dropdown}>
                         <Link to="/coffee" className="block mt-3 py-2 text-center hover:bg-neutral-200 p-3">Coffee</Link>
                         <Link to="/" className="block mt-3 py-2 text-center hover:bg-neutral-200 p-3">Tea</Link>
-                        <Link to="/" className="block my-3 py-2 text-center hover:bg-neutral-200 p-3">Energy Drinks</Link>
+                        <Link to="/" className="block my-3 py-2 text-center hover:bg-neutral-200 p-3">Brewing Tools</Link>
                     </div>
                 </div>
                 <Link to="/" className="hover:border-b-4 border-black">Contract</Link>
