@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 
-const Coffee = lazy(() => import('./pages/Coffee'));
+const Product = lazy(() => import('./pages/Product'));
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
           <Navbar />
           <Routes>
             <Route exact path="/" element={<Home />} />
-            <Route path="/coffee" element={<Coffee />} />
+            <Route path="/coffee" element={<Product />} />
           </Routes>
         </Suspense>
       </Router>

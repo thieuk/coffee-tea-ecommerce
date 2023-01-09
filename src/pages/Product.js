@@ -1,4 +1,7 @@
-export default function Coffee() {
+import Coffee from '../components/Coffee';
+import { coffeeData } from '../data';
+
+export default function Product() {
     return (
         <div>
             <img src={require("../img/coffee/coffee-bg.png")} alt="cups of coffee" className="w-screen" />
@@ -13,17 +16,15 @@ export default function Coffee() {
                     <label htmlFor="dark-roast">Dark</label> <br />
                 </div>
                 <div className="flex flex-wrap w-full justify-center mt-5">
-                    <div className="flex flex-col items-center border-2 border-neutral-200 shadow-lg rounded h-fit 
-                        sm:p-5 py-5 sm:m-5 m-2 min-w-max">
-                        <div className="w-[80%] sm:h-[200px] h-[120px] pb-2">
-                            <img src={require("../img/coffee/coffee2.jpg")} alt="coffee" className="h-full mx-auto object-contain"/>
-                        </div>
-                        <h1 className="w-[80%] text-center sm:text-lg text-md font-bold text-ellipsis overflow-hidden whitespace-nowrap">
-                            San Francisco Bay Coffee
-                        </h1>
-                        <h2 className="sm:text-lg text-md text-ellipsis overflow-hidden whitespace-nowrap">Moka Java</h2>
-                        <p className="sm:text-md text-sm ">$22.99</p>
-                    </div>
+                    {coffeeData.map((data, index) => {
+                        if (index === 2) {
+                            return (
+                                data.item.map(c => ( <Coffee img={c.img} brand={c.brand} blend={c.blend} price={c.price}/> ))
+                            );
+                        }
+
+                        return (<></>);
+                    })}
                 </div>
             </div>
         </div>
