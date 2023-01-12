@@ -11,11 +11,7 @@ export default function Product() {
 
     return (
         <div>
-            {itemData.map((data, index) => {
-                if (index === 0) return <img src={require(`../img/${data.bg}`)} alt="cups of coffee" className="w-screen" />;
-
-                return (<></>);
-            })}
+            { <img src={require(`../img/${itemData[0].bg}`)} alt="background" className="w-screen" /> }
             <div className="flex">
                 <div className="sm:block hidden bg-neutral-100 w-[10%] h-auto p-6">
                     <h2 className="font-bold text-md py-2">Roast</h2>
@@ -27,15 +23,9 @@ export default function Product() {
                     <label htmlFor="dark-roast">Dark</label> <br />
                 </div>
                 <div className="flex flex-wrap w-full justify-center mt-5">
-                    {itemData.map((data, index) => {
-                        if (index === 2) {
-                            return (
-                                data.item.map(c => ( <Item key={`coffee${index}`} img={c.img} brand={c.brand} item={c.item} price={c.price}/> ))
-                            );
-                        }
-
-                        return (<></>);
-                    })}
+                    { itemData[2].item.map((data, index) => (
+                        <Item key={`${id}${index}`} img={data.img} brand={data.brand} item={data.item} price={data.price}/>
+                    )) }
                 </div>
             </div>
         </div>
