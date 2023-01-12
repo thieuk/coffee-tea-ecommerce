@@ -26,8 +26,8 @@ export default function Navbar() {
                     </div>
                     <div className="dropdown-items absolute hidden font-normal z-[1] bg-white shadow-lg bg-neutral-100 ml-[-35px] p-3"
                         onMouseEnter={dropdown} onMouseOut={dropdown}>
-                        <Link to="/coffee" className="block mt-3 py-2 text-center hover:bg-neutral-200 p-3">Coffee</Link>
-                        <Link to="/" className="block mt-3 py-2 text-center hover:bg-neutral-200 p-3">Tea</Link>
+                        <Link to="/product/coffee" className="block mt-3 py-2 text-center hover:bg-neutral-200 p-3">Coffee</Link>
+                        <Link to="/product/tea" className="block mt-3 py-2 text-center hover:bg-neutral-200 p-3">Tea</Link>
                         <Link to="/" className="block my-3 py-2 text-center hover:bg-neutral-200 p-3">Brewing Tools</Link>
                     </div>
                 </div>

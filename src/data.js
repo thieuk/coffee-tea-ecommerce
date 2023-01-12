@@ -1,5 +1,5 @@
 export const coffeeData = [
-    {bg: "coffee-bg.png"},
+    {bg: "coffee/coffee-bg.png"},
     {filter: 
         { 
             category: "Roast",
@@ -8,108 +8,108 @@ export const coffeeData = [
     },
     {item: 
         [{
-            img: "coffee1.jpg",
+            img: "coffee/coffee1.jpg",
             brand: "Lavazza",
-            blend: "Super Crema",
+            item: "Super Crema",
             roast: "Medium",
             taste: "Notes of Hazelnuts and Brown Sugar",
             weight: "2.2 lbs",
             price: "22.99"
         },
         {
-            img: "coffee2.jpg",
+            img: "coffee/coffee2.jpg",
             brand: "San Francisco Bay Coffee",
-            blend: "Moka Java",
+            item: "Moka Java",
             roast: "Medium",
             taste: "Aromatic, Flavorful, and Balanced ",
             weight: "2 lbs",
             price: "22.99"
         },
         {
-            img: "coffee3.jpg",
+            img: "coffee/coffee3.jpg",
             brand: "STARBUCKS",
-            blend: "Pike Place",
+            item: "Pike Place",
             roast: "Medium",
             taste: "Notes of Cocoa and Rich Praline",
             weight: "18 oz",
             price: "13.99"
         },
         {
-            img: "coffee4.jpg",
+            img: "coffee/coffee4.jpg",
             brand: "La Colombe",
-            blend: "Nizza",
+            item: "Nizza",
             roast: "Medium",
             taste: "Notes of Milk Chocolate, Nuts, and Brownie",
             weight: "12 oz",
             price: "13.99"
         },
         {
-            img: "coffee5.jpg",
+            img: "coffee/coffee5.jpg",
             brand: "Stumptown",
-            blend: "Holler Mountain",
+            item: "Holler Mountain",
             roast: "Medium",
             taste: "Notes of Citrus Zest, Caramel and Hazelnut",
             weight: "12 oz",
             price: "15.99"
         },
         {
-            img: "coffee6.jpg",
+            img: "coffee/coffee6.jpg",
             brand: "STARBUCKS",
-            blend: "Breakfast Blend",
+            item: "Breakfast item",
             roast: "Light",
             taste: "Notes of Brown Sugar and Sweet Orange ",
             weight: "18 oz",
             price: "12.99"
         },
         {
-            img: "coffee7.jpg",
+            img: "coffee/coffee7.jpg",
             brand: "Fresh Roasted Coffee",
-            blend: "French Roast",
+            item: "French Roast",
             roast: "Dark",
             taste: "Notes of Cocoa and Raw Honey",
             weight: "5 lbs",
             price: "43.99"
         },
         {
-            img: "coffee8.jpg",
+            img: "coffee/coffee8.jpg",
             brand: "Bones Coffee",
-            blend: "Irish Cream",
+            item: "Irish Cream",
             roast: "Medium",
             taste: "Flavor of Irish Cream liqueur without the alcohol",
             weight: "12 oz",
             price: "17.99"
         },
         {
-            img: "coffee9.jpg",
+            img: "coffee/coffee9.jpg",
             brand: "Allegro Coffee",
-            blend: "Extra Dark French",
+            item: "Extra Dark French",
             roast: "Dark",
             taste: "Intense, Smoky, and Full",
             weight: "12 oz",
             price: "9.99"
         },
         {
-            img: "coffee10.jpg",
+            img: "coffee/coffee10.jpg",
             brand: "Coffee Bean & Tea Leaf",
-            blend: "House Blend",
+            item: "House item",
             roast: "Light",
             taste: "Light-bodied with a subtle fruity aroma and buttery finish",
             weight: "12 oz",
             price: "9.99"
         },
         {
-            img: "coffee11.jpg",
+            img: "coffee/coffee11.jpg",
             brand: "Intelligentsia ",
-            blend: "House Blend",
+            item: "House item",
             roast: "Light",
             taste: "Notes of Milk Chocolate, Citrus and Apple",
             weight: "12 oz",
             price: "14.99"
         },
         {
-            img: "coffee12.jpg",
+            img: "coffee/coffee12.jpg",
             brand: "La Colombe",
-            blend: "Winter Roast",
+            item: "Winter Roast",
             roast: "Medium",
             taste: "Notes of Almonds, Chocolate Mousse, and Rum Cake",
             weight: "12 oz",
@@ -117,3 +117,112 @@ export const coffeeData = [
         }]
     }
 ];
+
+export const teaData = [
+    {bg: "tea/tea-bg.png"},
+    {filter: 
+        { 
+            category: "Leaf",
+            subCategory: ["Loose Leaf", "Teabag", "Powder"] 
+        }
+    },
+    {item: 
+        [{ 
+            img: "tea/tea1.jpg",
+            brand: "Naoki",
+            item: "Ceremonial Grade Macha",
+            amount: "1.4 oz",
+            price: "23.99",
+            leaf: "Powder"
+        },
+        {
+            img: "tea/tea2.jpg",
+            brand: "Taylors of Harrogate",
+            item: "Earl Grey",
+            amount: "4.41 oz",
+            price: "8.99",
+            leaf: "Loose Leaf"
+        },
+        {
+            img: "tea/tea3.jpg",
+            brand: "Harney & Sons",
+            item: "English Breakfast",
+            amount: "4 oz",
+            price: "11.99",
+            leaf: "Loose Leaf"
+        },
+        {
+            img: "tea/tea4.jpg",
+            brand: "Big Train",
+            item: "Spiced Chai",
+            amount: "1.9 lbs",
+            price: "17.99",
+            leaf: "Powder"
+        },
+        {
+            img: "tea/tea5.jpg",
+            brand: "The Tao of Tea",
+            item: "Oolong Tea",
+            amount: "3.5 oz",
+            price: "14.99",
+            leaf: "Loose Leaf"
+        },
+        {
+            img: "tea/tea6.jpg",
+            brand: "Harney & Sons",
+            item: "Victorian London Fog Tea",
+            amount: "30 Count",
+            price: "12.99",
+            leaf: "Teabag"
+        },
+        {
+            img: "tea/tea7.jpg",
+            brand: "Bigelow",
+            item: "Cozy Chamomile",
+            amount: "120 Count",
+            price: "18.99",
+            leaf: "Teabag"
+        },
+        {
+            img: "tea/tea8.jpg",
+            brand: "TIAN HU SHAN",
+            item: "Puerh Tea",
+            amount: "8 oz",
+            price: "14.99",
+            leaf: "Loose Leaf"
+        },
+        {
+            img: "tea/tea9.jpg",
+            brand: "Imozai",
+            item: "Organic White Tea",
+            amount: "100 Count",
+            price: "8.99",
+            leaf: "Teabag"
+        },
+        {
+            img: "tea/tea10.jpg",
+            brand: "Guayaki",
+            item: "Yerba Mate",
+            amount: "16 oz",
+            price: "16.99",
+            leaf: "Loose Leaf"
+        },
+        {
+            img: "tea/tea11.jpg",
+            brand: "365 Whole Foods Market",
+            item: "Organic Green Tea",
+            amount: "70 Count",
+            price: "14.99",
+            leaf: "Teabag"
+        },
+        {
+            img: "tea/tea12.jpg",
+            brand: "Lipton",
+            item: "Black Tea",
+            amount: "100 Count",
+            price: "20.99",
+            leaf: "Teabag"
+        }]
+    }
+];
+

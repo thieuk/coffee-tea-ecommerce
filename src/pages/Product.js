@@ -1,10 +1,21 @@
-import Coffee from '../components/Coffee';
-import { coffeeData } from '../data';
+import { useParams } from "react-router-dom";
+import Item from '../components/Item';
+import { coffeeData, teaData } from '../data';
 
 export default function Product() {
+    const { id } = useParams();
+    let itemData = [];
+
+    if (id === "coffee") itemData = coffeeData;
+    if (id === "tea") itemData = teaData;
+
     return (
         <div>
-            <img src={require("../img/coffee/coffee-bg.png")} alt="cups of coffee" className="w-screen" />
+            {itemData.map((data, index) => {
+                if (index === 0) return <img src={require(`../img/${data.bg}`)} alt="cups of coffee" className="w-screen" />;
+
+                return (<></>);
+            })}
             <div className="flex">
                 <div className="sm:block hidden bg-neutral-100 w-[10%] h-auto p-6">
                     <h2 className="font-bold text-md py-2">Roast</h2>
@@ -16,10 +27,10 @@ export default function Product() {
                     <label htmlFor="dark-roast">Dark</label> <br />
                 </div>
                 <div className="flex flex-wrap w-full justify-center mt-5">
-                    {coffeeData.map((data, index) => {
+                    {itemData.map((data, index) => {
                         if (index === 2) {
                             return (
-                                data.item.map(c => ( <Coffee img={c.img} brand={c.brand} blend={c.blend} price={c.price}/> ))
+                                data.item.map(c => ( <Item key={`coffee${index}`} img={c.img} brand={c.brand} item={c.item} price={c.price}/> ))
                             );
                         }
 
