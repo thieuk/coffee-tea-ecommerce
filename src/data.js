@@ -1,10 +1,10 @@
 export const coffeeData = [
     {bg: "coffee/coffee-bg.png"},
     {filter: 
-        { 
+        [{ 
             category: "Roast",
             subCategory: ["Light", "Medium", "Dark"] 
-        }
+        }]
     },
     {item: 
         [{
@@ -121,10 +121,10 @@ export const coffeeData = [
 export const teaData = [
     {bg: "tea/tea-bg.png"},
     {filter: 
-        { 
+        [{ 
             category: "Leaf",
             subCategory: ["Loose Leaf", "Teabag", "Powder"] 
-        }
+        }]
     },
     {item: 
         [{ 

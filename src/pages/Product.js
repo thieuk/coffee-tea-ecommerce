@@ -14,13 +14,18 @@ export default function Product() {
             { <img src={require(`../img/${itemData[0].bg}`)} alt="background" className="w-screen" /> }
             <div className="flex">
                 <div className="sm:block hidden bg-neutral-100 w-[10%] h-auto p-6">
-                    <h2 className="font-bold text-md py-2">Roast</h2>
-                    <input type="checkbox" id="light-roast" value="light-roast" />
-                    <label htmlFor="light-roast">Light</label> <br />
-                    <input type="checkbox" id="medium-roast" value="medium-roast" />
-                    <label htmlFor="medium-roast">Medium</label> <br />
-                    <input type="checkbox" id="dark-roast" value="dark-roast" />
-                    <label htmlFor="dark-roast">Dark</label> <br />
+                    { itemData[1].filter.map(data => (
+                        <>
+                            <h2 className="font-bold text-md py-2">{data.category}</h2>
+
+                            {data.subCategory.map(sub => (
+                                <>
+                                    <input type="checkbox" id={`${data}-${sub.replace(" ", "-")}`} value={sub} />
+                                    <label htmlFor={`${data}-${sub.replace(" ", "-")}`}>{sub}</label> <br />
+                                </>
+                            ))}
+                        </>
+                    )) }
                 </div>
                 <div className="flex flex-wrap w-full justify-center mt-5">
                     { itemData[2].item.map((data, index) => (
