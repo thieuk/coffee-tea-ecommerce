@@ -2,7 +2,7 @@ export default function About() {
     return (
         <div>
             <div className="flex justify-center">
-                <div className="absolute w-1/2 text-lg">
+                <div className="absolute sm:w-3/4 w-full max-w-[800px] text-lg">
                     <h1 className="my-12 w-full text-center text-6xl text-white font-bold drop-shadow-md">About us</h1>
                     
                     <div className="bg-white rounded border-2 shadow-xl p-7">
