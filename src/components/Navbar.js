@@ -24,7 +24,7 @@ export default function Navbar() {
                     <div className="dropdown-bttn flex items-center py-5" onMouseEnter={dropdown} onMouseOut={dropdown} onClick={dropdown}>
                         Products<span className="material-symbols-outlined">expand_more</span>
                     </div>
-                    <div className="dropdown-items absolute hidden font-normal z-[1] shadow-xl bg-neutral-100 ml-[-35px] p-3"
+                    <div className="dropdown-items absolute hidden font-normal shadow-xl bg-neutral-100 ml-[-35px] p-3"
                         onMouseEnter={dropdown} onMouseOut={dropdown}>
                         <Link to="/product/coffee" className="block mt-3 py-2 text-center hover:bg-neutral-200 p-3">Coffee</Link>
                         <Link to="/product/tea" className="block mt-3 py-2 text-center hover:bg-neutral-200 p-3">Tea</Link>

@@ -1,5 +1,5 @@
 export const coffeeData = [
-    {bg: "coffee/coffee-bg.png"},
+    {bg: "coffee/coffee-hero-img.png"},
     {filter: 
         [{ 
             category: "Roast",
@@ -119,7 +119,7 @@ export const coffeeData = [
 ];
 
 export const teaData = [
-    {bg: "tea/tea-bg.png"},
+    {bg: "tea/tea-hero-img.png"},
     {filter: 
         [{ 
             category: "Leaf",
