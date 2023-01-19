@@ -124,13 +124,17 @@ export const teaData = [
         [{ 
             category: "Leaf",
             subCategory: ["Loose Leaf", "Teabag", "Powder"] 
+        },
+        {
+            category: "Tea",
+            subCategory: ["Green", "Black", "White", "Oolong", "Herbal", "Fermented"]
         }]
     },
     {item: 
         [{ 
             img: "tea/tea1.jpg",
             brand: "Naoki",
-            item: "Ceremonial Grade Macha",
+            item: "Ceremonial Grade Matcha",
             amount: "1.4 oz",
             price: "23.99",
             leaf: "Powder"

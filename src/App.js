@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 
 const Product = lazy(() => import('./pages/Product'));
+const About = lazy(() => import('./pages/About'));
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="/product/:id" element={<Product />} />
+            <Route path="/about" element={<About />} />
           </Routes>
         </Suspense>
       </Router>
