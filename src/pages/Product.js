@@ -11,7 +11,7 @@ export default function Product() {
 
     return (
         <div>
-            { <img src={require(`../img/${itemData[0].bg}`)} alt="hero img" className="w-screen" /> }
+            { <img src={require(`../img/${itemData[0].hero}`)} alt="hero img" className="w-screen" /> }
             <div className="flex">
                 <div className="sm:block hidden bg-neutral-100 w-[10%] h-auto p-6">
                     { itemData[1].filter.map((data) => (
