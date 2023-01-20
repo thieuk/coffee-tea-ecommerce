@@ -31,7 +31,7 @@ export default function Navbar() {
                         <Link to="/" className="block my-3 py-2 text-center hover:bg-neutral-200 p-3">Brewing Tools</Link>
                     </div>
                 </div>
-                <Link to="/" className="hover:border-b-4 border-black">Contract</Link>
+                <Link to="/" className="hover:border-b-4 border-black">Contact</Link>
                 <Link to="/" title="Checkout" className="material-symbols-outlined">shopping_cart_checkout</Link>
                 <Link to="/" title="Account" className="material-symbols-outlined md:text-3xl text-md mr-7">account_circle</Link>
             </div>
