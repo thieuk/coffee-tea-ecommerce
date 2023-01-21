@@ -28,7 +28,7 @@ export default function Footer() {
                 <div className="flex flex-col items-center">
                     <h3 className="font-bold">SIGN UP FOR NEWSLETTER</h3>
                     <input type="email" placeholder="Enter your email..." className="mt-2 mb-3 p-2 text-black rounded"></input>
-                    <button className="w-fit bg-amber-500 rounded py-2 px-3 text-black font-bold">SUBSCRIBE</button>
+                    <button className="bg-amber-400 rounded py-2 px-3 text-black font-bold">SUBSCRIBE</button>
                 </div>
             </div>
         </footer>

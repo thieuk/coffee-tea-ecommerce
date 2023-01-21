@@ -7,6 +7,7 @@ import Home from './pages/Home';
 
 const Product = lazy(() => import('./pages/Product'));
 const About = lazy(() => import('./pages/About'));
+const Contact = lazy(() => import('./pages/Contact'));
 const PageNotFound = lazy(() => import('./pages/PageNotFound'));
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
             <Route exact path="/" element={<Home />} />
             <Route path="/product/:id" element={<Product />} />
             <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/notFound" element={<PageNotFound />} />
           </Routes>
           <Footer />
