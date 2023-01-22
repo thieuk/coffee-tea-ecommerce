@@ -23,9 +23,9 @@ export default function Account() {
                 <label htmlFor="signup-username" className="mt-4">Username</label>
                 <input type="email" id="signup-username" placeholder="Enter username..." required className="border-2 border-purple-900 p-1"/>
                 <label htmlFor="new-password" className="mt-4">Password</label>
-                <input type="text" id="new-password" placeholder="Enter password..." required className="border-2 border-purple-900 p-1"/>
+                <input type="password" id="new-password" placeholder="Enter password..." required className="border-2 border-purple-900 p-1"/>
                 <label htmlFor="reenter-password" className="mt-4">Re-enter Password</label>
-                <input type="text" id="reenter-password" placeholder="Re-enter password..." required className="border-2 border-purple-900 p-1"/>
+                <input type="password" id="reenter-password" placeholder="Re-enter password..." required className="border-2 border-purple-900 p-1"/>
                 <input type="submit" value="SIGN UP" className="w-fit bg-amber-400 py-2 px-3 font-bold rounded mt-4 mx-auto" />
             </form>
             <form id="signin" className="flex flex-col justify-center m-9">
@@ -33,7 +33,7 @@ export default function Account() {
                 <label htmlFor="signin-username" className="mt-4">Username</label>
                 <input type="email" id="signin-username" placeholder="Enter username..." required className="border-2 border-purple-900 p-1"/>
                 <label htmlFor="signin-password" className="mt-4">Password</label>
-                <input type="text" id="signin-password" placeholder="Enter password..." required className="border-2 border-purple-900 p-1"/>
+                <input type="password" id="signin-password" placeholder="Enter password..." required className="border-2 border-purple-900 p-1"/>
                 <input type="submit" value="SIGN IN" className="w-fit bg-amber-400 py-2 px-3 font-bold rounded mt-4 mx-auto" />
                 <p className="mx-auto mt-4 underline">Forgot Password?</p>
             </form>
