@@ -14,8 +14,8 @@ export default function Footer() {
                     </div>
                     <div className="flex flex-col">
                         <h3 className="font-bold">PRODUCTS</h3>
-                        <Link to="/notFound">Coffee</Link>
-                        <Link to="/notFound">Tea</Link>
+                        <Link to="/product/coffee">Coffee</Link>
+                        <Link to="/product/tea">Tea</Link>
                         <Link to="/notFound">Brewing Tools</Link>
                     </div>
                     <div className="flex flex-col">
@@ -25,11 +25,11 @@ export default function Footer() {
                         <Link to="/notFound">Twitter</Link>
                     </div>
                 </div>
-                <div className="flex flex-col items-center">
+                <form className="flex flex-col items-center">
                     <h3 className="font-bold">SIGN UP FOR NEWSLETTER</h3>
-                    <input type="email" placeholder="Enter your email..." className="mt-2 mb-3 p-2 text-black rounded"></input>
-                    <button className="bg-amber-400 rounded py-2 px-3 text-black font-bold">SUBSCRIBE</button>
-                </div>
+                    <input type="email" placeholder="Enter your email..." required className="mt-2 mb-3 p-2 text-black rounded"></input>
+                    <input type="submit" value="SUBSCRIBE" className="bg-amber-400 rounded py-2 px-3 text-black font-bold" />
+                </form>
             </div>
         </footer>
     );
