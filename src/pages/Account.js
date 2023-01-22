@@ -13,6 +13,14 @@ function chgForm() {
         document.querySelector("#account div").style.transform = "translate(0)";
         document.querySelector("#account div").style.borderRadius = "8px 0 0 8px";
     }
+
+    const inputTag = document.getElementsByTagName("input");
+
+    for (let i = 0; i < inputTag.length; i++) {
+        if (inputTag[i].type !== "submit") {
+            inputTag[i].value = "";
+        }
+    }
 }
 
 export default function Account() {
