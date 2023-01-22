@@ -1,4 +1,4 @@
-export default function PageNotFound(){
+export default function NotFound(){
     return (
         <div className="h-screen flex flex-col items-center justify-center text-purple-900">
             <div className="material-symbols-outlined sm:text-9xl text-7xl">warning</div>

@@ -28,7 +28,7 @@ export default function Footer() {
                 <form className="flex flex-col items-center">
                     <h3 className="font-bold">SIGN UP FOR NEWSLETTER</h3>
                     <input type="email" placeholder="Enter your email..." required className="mt-2 mb-3 p-2 text-black rounded"></input>
-                    <input type="submit" value="SUBSCRIBE" className="bg-amber-400 rounded py-2 px-3 text-black font-bold" />
+                    <input type="submit" value="SUBSCRIBE" className="bg-amber-400 rounded py-2 px-3 text-black font-bold cursor-pointer" />
                 </form>
             </div>
         </footer>
