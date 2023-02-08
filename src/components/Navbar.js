@@ -14,7 +14,7 @@ function dropdown() {
 
 export default function Navbar() {
     return (
-        <nav className="sticky top-0 flex items-center h-[65px] shadow-lg bg-white">
+        <nav className="sticky top-0 flex items-center h-[65px] shadow-lg bg-white z-[99]">
             <Link to="/"><img src={require("../img/logo.png")} alt="logo" className="md:w-[50px] w-[35px] ml-5 mr-3"/></Link>
             <Link to="/" className="lg:text-xl text-lg font-bold md:block hidden">COFFEE & TEA</Link>
             <div className="flex items-center ml-auto sm:gap-9 md:gap-5 gap-2 font-bold sm:text-base text-xs">
