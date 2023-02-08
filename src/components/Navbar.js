@@ -24,11 +24,10 @@ export default function Navbar() {
                     <div className="dropdown-bttn flex items-center py-5" onMouseEnter={dropdown} onMouseOut={dropdown} onClick={dropdown}>
                         Products<span className="material-symbols-outlined">expand_more</span>
                     </div>
-                    <div className="dropdown-items absolute hidden font-normal shadow-xl bg-neutral-100 ml-[-35px] p-3"
+                    <div className="dropdown-items absolute hidden font-normal shadow-xl bg-neutral-100 p-5 ml-[-20px]"
                         onMouseEnter={dropdown} onMouseOut={dropdown}>
-                        <Link to="/product/coffee" className="block mt-3 py-2 text-center hover:bg-neutral-200 p-3">Coffee</Link>
-                        <Link to="/product/tea" className="block mt-3 py-2 text-center hover:bg-neutral-200 p-3">Tea</Link>
-                        <Link to="/" className="block my-3 py-2 text-center hover:bg-neutral-200 p-3">Brewing Tools</Link>
+                        <Link to="/product/coffee" className="block py-2 text-center hover:bg-neutral-200 p-5">Coffee</Link>
+                        <Link to="/product/tea" className="block mt-3 py-2 text-center hover:bg-neutral-200 p-5">Tea</Link>
                     </div>
                 </div>
                 <Link to="/contact" className="hover:border-b-4 border-black">Contact</Link>
