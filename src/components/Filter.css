@@ -1,0 +1,11 @@
+:root {
+    --filter-display: none;
+    --filter-transform: translateX(-100%);
+}
+
+@media screen and (max-width: 768px) {
+    #filter {
+        display: var(--filter-display);
+        transform: var(--filter-transform);
+    }
+}
