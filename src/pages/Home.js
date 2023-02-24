@@ -10,9 +10,9 @@ export default function Home() {
 
     return (
         <>
-            <h1 className="bg-purple-900 text-yellow-300 text-2xl font-bold text-center w-full p-2">Free Shipping on Orders Over $75</h1>
+            <h1 className="bg-purple-900 text-yellow-300 md:text-2xl text-lg font-bold text-center w-full p-2">Free Shipping on Orders Over $75</h1>
             <div className="relative">
-                <img src={require("../img/home-hero-img.png")} alt="hero img" className="w-screen opacity-40" />
+                <img src={require("../img/home-hero.png")} alt="hero img" className="w-screen opacity-40" />
                 <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
                     <h1 className="md:text-5xl sm:text-3xl text-xl font-extrabold w-[80%] text-center">
                         Bringing You the World's Finest Tea and Coffee Straight to Your Doorstep.
@@ -23,7 +23,7 @@ export default function Home() {
             <DealSlider items={[coffeeData[2].item[3], teaData[2].item[0], teaData[2].item[1], coffeeData[2].item[2], coffeeData[2].item[4]]} />
             
             <div className="flex flex-col items-center">
-                <h1 className="mt-9 mb-4 text-center text-4xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600 drop-shadow-lg">
+                <h1 className="mt-9 mb-4 text-center md:text-4xl text-2xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600 drop-shadow-lg">
                     Popular Products
                 </h1>
                 <div className="flex flex-wrap justify-center items-center w-[80%]">
@@ -35,8 +35,8 @@ export default function Home() {
                 </div>
             </div>
 
-            <div className="relative mb-[-20px]">
-                <img src={require("../img/home-b-hero-img.png")} alt="hero img" className="w-full md:min-h-[400px] min-h-[350px] object-none opacity-20" />
+            <div className="relative">
+                <img src={require("../img/home-b-hero.png")} alt="hero img" className="w-full md:min-h-[400px] min-h-[350px] object-none opacity-20" />
                 <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center">
                     <h1 className="md:text-5xl sm:text-3xl text-2xl font-extrabold text-center">MONTHLY DRAWINGS:</h1>
                     <h2 className="w-[90%] my-4 md:text-2xl sm:text-xl text-lg font-extrabold text-center">

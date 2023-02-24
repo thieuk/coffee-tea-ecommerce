@@ -1,8 +1,10 @@
 export default function About() {
     return (
-        <div className="relative z-[-90] w-full">
-            <div className="h-[200px] pt-[25px] bg-purple-900">
-                <h1 className="text-center text-6xl text-white font-bold">About us</h1>
+        <div className="relative z-[-90] w-full sm:mb-0 mb-[-50px]">
+            <div className="h-[200px] bg-purple-900">
+                <div className="flex flex-col items-center justify-center h-[125px]">
+                    <h1 className="md:text-6xl text-5xl text-white font-bold">About us</h1>
+                </div>
             </div>
             <div className="sm:w-3/4 w-full max-w-[800px] mx-auto mt-[-75px] text-lg bg-white rounded border-2 shadow-xl p-7">
                 <p>Welcome to our coffee and tea store! We're a team of coffee and tea lovers who are passionate about bringing the 

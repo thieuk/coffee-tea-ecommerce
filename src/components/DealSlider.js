@@ -25,7 +25,7 @@ export default function DealSlider(props) {
         <div id="slider" className="relative">
             <hr className="absolute w-full top-5 z-[-1] border-t-4 border-purple-800" />
             <div className="w-fit mx-auto px-6 bg-white">
-                <h1 className="w-fit mt-9 text-center text-4xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600 drop-shadow-lg">
+                <h1 className="w-fit mt-9 text-center md:text-4xl text-2xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600 drop-shadow-lg">
                     Deals of the Week
                 </h1>
             </div>
@@ -33,15 +33,15 @@ export default function DealSlider(props) {
                 <div id="saleItems" className="flex w-[500vw] transition-transform duration-1000">
                     {props.items.map((item) => (
                         <div className="w-full flex justify-center items-center my-9">
-                            <img src={require(`../img/${item.img}`)} alt="featured coffee" className="md:h-[175px] h-[135px]"/>
+                            <img src={require(`../img/${item.img}`)} alt="featured coffee" className="md:h-[175px] sm:h-[135px] h-[110px]"/>
                             <div>
-                                <h1 className="font-bold md:text-3xl sm:text-2xl text-xl">{item.brand}</h1>
-                                <h2 className="font-bold md:text-xl sm:text-lg text-base">{item.item}</h2>
+                                <h1 className="font-bold md:text-3xl sm:text-2xl text-lg">{item.brand}</h1>
+                                <h2 className="font-bold md:text-xl sm:text-lg text-sm">{item.item}</h2>
                                 <p className="md:text-base text-sm">
                                     <span className="text-neutral-500 mr-2 line-through">${item.price}</span>
                                     ${(parseFloat(item.price) - parseFloat(item.price) * saleAmount).toFixed(2)}
                                 </p>
-                                <button className="bg-amber-400 mx-auto px-2 py-1 mt-2 rounded text-black font-bold hover:bg-yellow-500 md:text-base text-sm">
+                                <button className="bg-amber-400 mx-auto px-2 py-1 mt-2 rounded text-black font-bold hover:bg-yellow-500 md:text-base sm:text-sm text-xs">
                                     View Product
                                 </button>
                             </div>

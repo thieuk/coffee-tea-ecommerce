@@ -1,56 +1,50 @@
+let login = true;
+
 function chgForm() {
-    if (document.querySelector("#account div button").innerHTML === "CREATE ACCOUNT") {
-        document.querySelector("#account div h1").innerHTML = "Aready Have an Account?";
-        document.querySelector("#account div h2").innerHTML = "Sign In Instead";
-        document.querySelector("#account div button").innerHTML = "LOG IN";
-        document.querySelector("#account div").style.transform = "translate(100%)";
-        document.querySelector("#account div").style.borderRadius = "0 8px 8px 0";
+    if (login) { 
+        document.getElementById("signin").style.display = "none";
+        document.getElementById("signup").style.display = "block";
+        login = false; 
     }
     else {
-        document.querySelector("#account div h1").innerHTML = "Don't Have an Account?";
-        document.querySelector("#account div h2").innerHTML = "Sign Up Instead";
-        document.querySelector("#account div button").innerHTML = "CREATE ACCOUNT";
-        document.querySelector("#account div").style.transform = "translate(0)";
-        document.querySelector("#account div").style.borderRadius = "8px 0 0 8px";
-    }
-
-    const inputTag = document.getElementsByTagName("input");
-
-    for (let i = 0; i < inputTag.length; i++) {
-        if (inputTag[i].type !== "submit") {
-            inputTag[i].value = "";
-        }
+        document.getElementById("signin").style.display = "block";
+        document.getElementById("signup").style.display = "none";
+        login = true;
     }
 }
 
 export default function Account() {
     return (
-        <div id="account" className="relative w-fit mx-auto flex border-2 border-purple-900 rounded-xl p-9 gap-9 mt-[50px]">
-            <form id="signup" className="flex flex-col justify-center m-9">
-                <h1 className="font-bold text-xl text-center">SIGN UP</h1>
-                <label htmlFor="signup-username" className="mt-4">Username</label>
-                <input type="email" id="signup-username" placeholder="Enter username..." required className="border-2 border-purple-900 p-1"/>
-                <label htmlFor="new-password" className="mt-4">Password</label>
-                <input type="password" id="new-password" placeholder="Enter password..." required className="border-2 border-purple-900 p-1"/>
-                <label htmlFor="reenter-password" className="mt-4">Re-enter Password</label>
-                <input type="password" id="reenter-password" placeholder="Re-enter password..." required className="border-2 border-purple-900 p-1"/>
-                <input type="submit" value="SIGN UP" className="w-fit bg-amber-400 py-2 px-3 font-bold rounded mt-4 mx-auto" />
-            </form>
-            <form id="signin" className="flex flex-col justify-center m-9">
-                <h1 className="font-bold text-xl text-center">SIGN IN</h1>
-                <label htmlFor="signin-username" className="mt-4">Username</label>
-                <input type="email" id="signin-username" placeholder="Enter username..." required className="border-2 border-purple-900 p-1"/>
-                <label htmlFor="signin-password" className="mt-4">Password</label>
-                <input type="password" id="signin-password" placeholder="Enter password..." required className="border-2 border-purple-900 p-1"/>
-                <input type="submit" value="SIGN IN" className="w-fit bg-amber-400 py-2 px-3 font-bold rounded mt-4 mx-auto" />
-                <p className="mx-auto mt-4 underline">Forgot Password?</p>
-            </form>
-            <div className="absolute top-0 left-0 flex flex-col justify-center items-center rounded-l-lg bg-purple-900 w-1/2 h-full text-white transition-transform">
-                <h1 className="text-xl font-bold">Don't Have an Account?</h1>
-                <h2 className="font-bold">Sign Up Instead</h2>
-                <button onClick={chgForm} className="mt-4 font-extrabold text-amber-400 border-2 border-amber-400 py-2 px-3 rounded-2xl hover:bg-amber-400 hover:text-black">
-                    CREATE ACCOUNT
-                </button>
+        <div className="min-h-[calc(100vh-65px)] flex justify-center items-center p-12">
+            <div id="account" className="w-fit sm:h-[475px] h-fit flex items-center border-2 border-purple-900 rounded-xl sm:px-16 sm:py-0 p-5 gap-9 shadow-2xl">
+                <div id="signup" className="hidden flex flex-col justify-center w-[240px] sm:scale-100 scale-90">
+                    <h1 className="font-bold text-2xl text-center text-purple-900">SIGN UP</h1>
+                    <form id="signup" className="flex flex-col justify-center">
+                        <input type="email" id="signup-username" placeholder="Username" required className="mt-5 border-2 border-purple-900 p-1 rounded"/>
+                        <input type="password" id="new-password" placeholder="Password" required className="mt-5 border-2 border-purple-900 p-1 rounded"/>
+                        <input type="password" id="reenter-password" placeholder="Re-enter password" required className="mt-5 border-2 border-purple-900 p-1 rounded"/>
+                        <input type="submit" value="SIGN UP" className="w-fit bg-amber-400 py-2 px-3 font-bold rounded mt-4 mx-auto" />
+                    </form>
+                    <p className="mt-5 text-center">Already a user? <span className="underline font-bold hover:cursor-pointer" onClick={chgForm}>LOGIN</span></p>
+                </div>
+                <div id="signin" className="flex flex-col justify-center w-[240px] sm:scale-100 scale-90">
+                    <h1 className="font-bold text-2xl text-center text-purple-900">LOGIN</h1>
+                    <form id="signin" className="flex flex-col justify-center">
+                        <input type="email" id="signup-username" placeholder="Username" required className="mt-5 border-2 border-purple-900 p-1 rounded"/>
+                        <input type="password" id="new-password" placeholder="Password" required className="mt-5 border-2 border-purple-900 p-1 rounded"/>
+                        <input type="submit" value="SIGN IN" className="w-fit bg-amber-400 py-2 px-3 font-bold rounded mt-4 mx-auto" />
+                        <p className="mt-4 text-center underline">Forgot Password?</p>
+                        <div className="flex flex-col items-center mt-7">
+                            <hr className="w-full border-t-4 border-purple-800" />
+                            <span className="bg-white px-2 mt-[-15px]">or</span>
+                        </div>
+                        <button className="flex justify-center items-center mt-5 py-2 bg-neutral-200 rounded hover:bg-neutral-300">
+                            <img src={require("../img/google-icon.jpg")} alt="google logo" className="w-[25px] h-[25px]" />
+                            <span className="text-sm">Sign In with Google</span>
+                        </button>
+                    </form>
+                    <p className="mt-5 text-center">Need an account? <span className="underline font-bold hover:cursor-pointer" onClick={chgForm}>SIGN UP</span></p>
+                </div>
             </div>
         </div>
     );
