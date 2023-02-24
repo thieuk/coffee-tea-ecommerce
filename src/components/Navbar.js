@@ -12,6 +12,11 @@ function dropdown() {
     dropdownItems.addEventListener("mouseout", () => { dropdownItems.style.display = "none"; });
 }
 
+function handleClick() {
+    const dropdownItems = document.querySelector(".dropdown-items");
+    dropdownItems.style.display = "none";
+}
+
 export default function Navbar() {
     return (
         <nav className="sticky top-0 flex items-center h-[65px] shadow-lg bg-white z-[99]">
@@ -26,8 +31,8 @@ export default function Navbar() {
                     </div>
                     <div className="dropdown-items absolute hidden font-normal shadow-xl bg-neutral-100 p-5 ml-[-20px]"
                         onMouseEnter={dropdown} onMouseOut={dropdown}>
-                        <Link to="/product/coffee" className="block py-2 text-center hover:bg-neutral-200 p-5">Coffee</Link>
-                        <Link to="/product/tea" className="block mt-3 py-2 text-center hover:bg-neutral-200 p-5">Tea</Link>
+                        <Link to="/product/coffee" className="block py-2 text-center hover:bg-neutral-200 p-5" onClick={handleClick}>Coffee</Link>
+                        <Link to="/product/tea" className="block mt-3 py-2 text-center hover:bg-neutral-200 p-5" onClick={handleClick}>Tea</Link>
                     </div>
                 </div>
                 <Link to="/contact" className="hover:border-b-4 border-black">Contact</Link>
