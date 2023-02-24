@@ -30,7 +30,7 @@ export default function DealSlider(props) {
                 </h1>
             </div>
             <div className="border-b-4 border-purple-800 overflow-x-hidden">
-                <div id="saleItems" className="flex w-[500vw] transition-transform duration-1000">
+                <div id="saleItems" className="flex w-[500vw] sm:transition-transform sm:duration-1000">
                     {props.items.map((item) => (
                         <div className="w-full flex justify-center items-center my-9">
                             <img src={require(`../img/${item.img}`)} alt="featured coffee" className="md:h-[175px] sm:h-[135px] h-[110px]"/>
