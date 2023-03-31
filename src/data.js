@@ -14,7 +14,8 @@ export const coffeeData = [
             roast: "Medium",
             taste: "Notes of Hazelnuts and Brown Sugar",
             weight: "2.2 lbs",
-            price: "22.99"
+            price: "22.99",
+            id: 1
         },
         {
             img: "coffee/coffee2.jpg",
@@ -23,7 +24,8 @@ export const coffeeData = [
             roast: "Medium",
             taste: "Aromatic, Flavorful, and Balanced ",
             weight: "2 lbs",
-            price: "22.99"
+            price: "22.99",
+            id: 2
         },
         {
             img: "coffee/coffee3.jpg",
@@ -32,7 +34,8 @@ export const coffeeData = [
             roast: "Medium",
             taste: "Notes of Cocoa and Rich Praline",
             weight: "18 oz",
-            price: "13.99"
+            price: "13.99",
+            id: 3
         },
         {
             img: "coffee/coffee4.jpg",
@@ -41,7 +44,8 @@ export const coffeeData = [
             roast: "Medium",
             taste: "Notes of Milk Chocolate, Nuts, and Brownie",
             weight: "12 oz",
-            price: "13.99"
+            price: "13.99",
+            id: 4
         },
         {
             img: "coffee/coffee5.jpg",
@@ -50,7 +54,8 @@ export const coffeeData = [
             roast: "Medium",
             taste: "Notes of Citrus Zest, Caramel and Hazelnut",
             weight: "12 oz",
-            price: "15.99"
+            price: "15.99",
+            id: 5
         },
         {
             img: "coffee/coffee6.jpg",
@@ -59,7 +64,8 @@ export const coffeeData = [
             roast: "Light",
             taste: "Notes of Brown Sugar and Sweet Orange ",
             weight: "18 oz",
-            price: "12.99"
+            price: "12.99",
+            id: 6
         },
         {
             img: "coffee/coffee7.jpg",
@@ -68,7 +74,8 @@ export const coffeeData = [
             roast: "Dark",
             taste: "Notes of Cocoa and Raw Honey",
             weight: "5 lbs",
-            price: "43.99"
+            price: "43.99",
+            id: 7
         },
         {
             img: "coffee/coffee8.jpg",
@@ -77,7 +84,8 @@ export const coffeeData = [
             roast: "Medium",
             taste: "Flavor of Irish Cream liqueur without the alcohol",
             weight: "12 oz",
-            price: "17.99"
+            price: "17.99",
+            id: 8
         },
         {
             img: "coffee/coffee9.jpg",
@@ -86,7 +94,8 @@ export const coffeeData = [
             roast: "Dark",
             taste: "Intense, Smoky, and Full",
             weight: "12 oz",
-            price: "9.99"
+            price: "9.99",
+            id: 9
         },
         {
             img: "coffee/coffee10.jpg",
@@ -95,7 +104,8 @@ export const coffeeData = [
             roast: "Light",
             taste: "Light-bodied with a subtle fruity aroma and buttery finish",
             weight: "12 oz",
-            price: "9.99"
+            price: "9.99",
+            id: 10
         },
         {
             img: "coffee/coffee11.jpg",
@@ -104,7 +114,8 @@ export const coffeeData = [
             roast: "Light",
             taste: "Notes of Milk Chocolate, Citrus and Apple",
             weight: "12 oz",
-            price: "14.99"
+            price: "14.99",
+            id: 11
         },
         {
             img: "coffee/coffee12.jpg",
@@ -113,7 +124,8 @@ export const coffeeData = [
             roast: "Medium",
             taste: "Notes of Almonds, Chocolate Mousse, and Rum Cake",
             weight: "12 oz",
-            price: "13.99"
+            price: "13.99",
+            id: 12
         }]
     }
 ];
@@ -137,7 +149,8 @@ export const teaData = [
             item: "Ceremonial Grade Matcha",
             amount: "1.4 oz",
             price: "23.99",
-            leaf: "Powder"
+            leaf: "Powder",
+            id: 13
         },
         {
             img: "tea/tea2.jpg",
@@ -145,7 +158,8 @@ export const teaData = [
             item: "Earl Grey",
             amount: "4.41 oz",
             price: "8.99",
-            leaf: "Loose Leaf"
+            leaf: "Loose Leaf",
+            id: 14
         },
         {
             img: "tea/tea3.jpg",
@@ -153,7 +167,8 @@ export const teaData = [
             item: "English Breakfast",
             amount: "4 oz",
             price: "11.99",
-            leaf: "Loose Leaf"
+            leaf: "Loose Leaf",
+            id: 15
         },
         {
             img: "tea/tea4.jpg",
@@ -161,7 +176,8 @@ export const teaData = [
             item: "Spiced Chai",
             amount: "1.9 lbs",
             price: "17.99",
-            leaf: "Powder"
+            leaf: "Powder",
+            id: 16
         },
         {
             img: "tea/tea5.jpg",
@@ -169,7 +185,8 @@ export const teaData = [
             item: "Oolong Tea",
             amount: "3.5 oz",
             price: "14.99",
-            leaf: "Loose Leaf"
+            leaf: "Loose Leaf",
+            id: 17
         },
         {
             img: "tea/tea6.jpg",
@@ -177,7 +194,8 @@ export const teaData = [
             item: "Victorian London Fog Tea",
             amount: "30 Count",
             price: "12.99",
-            leaf: "Teabag"
+            leaf: "Teabag",
+            id: 18
         },
         {
             img: "tea/tea7.jpg",
@@ -185,7 +203,8 @@ export const teaData = [
             item: "Cozy Chamomile",
             amount: "120 Count",
             price: "18.99",
-            leaf: "Teabag"
+            leaf: "Teabag",
+            id: 19
         },
         {
             img: "tea/tea8.jpg",
@@ -193,7 +212,8 @@ export const teaData = [
             item: "Puerh Tea",
             amount: "8 oz",
             price: "14.99",
-            leaf: "Loose Leaf"
+            leaf: "Loose Leaf",
+            id: 20
         },
         {
             img: "tea/tea9.jpg",
@@ -201,7 +221,8 @@ export const teaData = [
             item: "Organic White Tea",
             amount: "100 Count",
             price: "8.99",
-            leaf: "Teabag"
+            leaf: "Teabag",
+            id: 21
         },
         {
             img: "tea/tea10.jpg",
@@ -209,7 +230,8 @@ export const teaData = [
             item: "Yerba Mate",
             amount: "16 oz",
             price: "16.99",
-            leaf: "Loose Leaf"
+            leaf: "Loose Leaf",
+            id: 22
         },
         {
             img: "tea/tea11.jpg",
@@ -217,7 +239,8 @@ export const teaData = [
             item: "Organic Green Tea",
             amount: "70 Count",
             price: "14.99",
-            leaf: "Teabag"
+            leaf: "Teabag",
+            id: 23
         },
         {
             img: "tea/tea12.jpg",
@@ -225,8 +248,8 @@ export const teaData = [
             item: "Black Tea",
             amount: "100 Count",
             price: "20.99",
-            leaf: "Teabag"
+            leaf: "Teabag",
+            id: 24
         }]
     }
 ];
-
