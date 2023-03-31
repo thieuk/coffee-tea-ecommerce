@@ -1,6 +1,6 @@
 export default function About() {
     return (
-        <div className="relative z-[-90] w-full sm:mb-0 mb-[-50px]">
+        <div className="relative z-[-90] w-full sm:mb-0 mb-[-50px] min-h-[calc(100vh-280px)]">
             <div className="h-[200px] bg-purple-900">
                 <div className="flex flex-col items-center justify-center h-[125px]">
                     <h1 className="md:text-6xl text-5xl text-white font-bold">About us</h1>
