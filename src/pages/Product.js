@@ -11,13 +11,13 @@ export default function Product() {
     if (id === "tea") itemData = teaData;
 
     return (
-        <div>
+        <div className="min-h-[calc(100vh-280px)]">
             { <img src={require(`../img/${itemData[0].hero}`)} alt="hero img" className="w-screen" /> }
             <div className="relative flex">
                 <Filter itemData={itemData}/>
-                <div className="flex flex-wrap w-full justify-center mt-5">
-                    { itemData[2].item.map((data, index) => (
-                        <Item key={`${id}${index}`} img={data.img} brand={data.brand} item={data.item} price={data.price}/>
+                <div className="flex flex-wrap w-full justify-center mt-5 gap-12">
+                    { itemData[2].item.map((data) => (
+                        <Item key={data.id} img={data.img} brand={data.brand} item={data.item} price={data.price} id={data.id}/>
                     )) }
                 </div>
             </div>

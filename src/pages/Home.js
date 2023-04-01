@@ -9,7 +9,7 @@ export default function Home() {
     ];
 
     return (
-        <>
+        <div className="min-h-[calc(100vh-329px)]">
             <h1 className="bg-purple-900 text-yellow-300 md:text-2xl text-lg font-bold text-center w-full p-2">Free Shipping on Orders Over $75</h1>
             <div className="relative">
                 <img src={require("../img/home-hero.png")} alt="hero img" className="w-screen opacity-40" />
@@ -26,10 +26,10 @@ export default function Home() {
                 <h1 className="mt-9 mb-4 text-center md:text-4xl text-2xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600 drop-shadow-lg">
                     Popular Products
                 </h1>
-                <div className="flex flex-wrap justify-center items-center w-[80%]">
+                <div className="flex flex-wrap justify-center items-center sm:w-[80%] w-[90%] max-w-[1000px] mb-[35px]">
                     {popularProduct.map((product) => (
-                        <div className="scale-[.85] m-[-10px]">
-                            <Item img={product.img} brand={product.brand} item={product.item} price={product.price} />
+                        <div className="sm:scale-[0.85] scale-95">
+                            <Item id={product.id} img={product.img} brand={product.brand} item={product.item} price={product.price} />
                         </div>
                     ))}
                 </div>
@@ -48,6 +48,6 @@ export default function Home() {
                     </form>
                 </div>
             </div>
-        </>
+        </div>
     );
 }

@@ -42,7 +42,7 @@ export default function DealSlider(props) {
                                     ${(parseFloat(item.price) - parseFloat(item.price) * saleAmount).toFixed(2)}
                                 </p>
                                 <button className="bg-amber-400 mx-auto px-2 py-1 mt-2 rounded text-black font-bold hover:bg-yellow-500 md:text-base sm:text-sm text-xs">
-                                    View Product
+                                    Add to Cart
                                 </button>
                             </div>
                         </div>
