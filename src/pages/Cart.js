@@ -20,7 +20,7 @@ export default function Cart() {
     return (
         <div className="flex justify-center mt-[50px]">
             <div className="flex flex-col items-center w-[500px] min-h-[calc(100vh-329px)] border-2 rounded-lg shadow-lg">
-                <Link to="/checkout" className="block w-full text-center py-2 bg-amber-400 font-bold rounded-t hover:bg-amber-500">Proceed to Checkout</Link>
+                {cart.length > 0 ? <Link to="/checkout" className="block w-full text-center py-2 bg-amber-400 font-bold rounded-t hover:bg-amber-500">Proceed to Checkout</Link> : <></>}
                 <div className="mt-7">
                     {cart.length > 0 ? cart.map(product => (
                         <div id={product.id} className="flex items-center justify-center w-[350px] mb-7 py-3 shadow">

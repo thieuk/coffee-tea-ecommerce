@@ -32,7 +32,7 @@ function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="/account" element={<Account />} />
               <Route path="/cart" element={<Cart />} />
-              <Route path="/checkout" element={<Checkout cart={cart}/>} />
+              <Route path="/checkout" element={<Checkout />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
             <Footer />
