@@ -1,8 +1,10 @@
+import { toast } from "react-hot-toast"; 
+
 export default function Contact() {
     return (
         <div>
             <h1 className="w-full py-[25px] bg-purple-900 sm:text-6xl text-4xl text-white font-bold text-center">Contact Us</h1>
-            <div className="w-[80vw] max-w-[1000px] flex justify-center items-center mt-[50px] md:flex-row flex-col bg-purple-900 mx-auto rounded-xl border-2 border-purple-900">
+            <div className="w-[80vw] max-w-[800px] flex justify-center items-center mt-[50px] md:flex-row flex-col bg-purple-900 mx-auto rounded-xl border-2 border-purple-900">
                 <div className="w-1/2 text-xl font-semibold flex justify-center mb-5 text-white">
                     <div>
                         <div className="flex items-center mt-9">
@@ -37,20 +39,11 @@ export default function Contact() {
                         </div>
                     </div>
                 </div>
-                <form className="flex flex-col items-center md:w-1/2 w-[80vw] p-9 md:bg-white bg-purple-900 md:mb-0 mb-5 md:rounded-r-xl">
-                    <div className="flex flex-col w-full">
-                        <label htmlFor="fname" className="mr-3 sm:text-xl text-lg md:text-black text-white">Name</label>
-                        <input type="text" id="fname" required placeholder="Enter name..." className="w-full border-2 md:border-purple-900 p-1"></input>
-                    </div>
-                    <div className="flex flex-col mt-5 w-full">
-                        <label htmlFor="mail" className="mr-3 sm:text-xl text-lg md:text-black text-white">Email </label>
-                        <input type="email" id="mail" required placeholder="Enter your email..." className="w-full border-2 border-purple-900 p-1"></input>
-                    </div>
-                    <div className="flex flex-col mt-5 w-full">
-                        <label htmlFor="msg" className="mr-3 sm:text-xl text-lg md:text-black text-white">Message</label>
-                        <textarea id="msg" required placeholder="Enter your message..." className="w-full h-[150px] border-2 border-purple-900 p-1"></textarea>
-                    </div>
-                    <input type="submit" value="SUBMIT" className="mt-5 bg-amber-400 rounded py-2 px-3 text-black font-bold sm:text-xl text-lg cursor-pointer" />
+                <form onSubmit={(event) => { event.preventDefault(); toast.success("Thanks for Your Feedback.")} } className="flex flex-col items-center md:w-1/2 w-[80vw] p-9 md:bg-white bg-purple-900 md:mb-0 mb-5 md:rounded-r-xl">
+                    <input type="text" id="fname" required placeholder="Enter name..." className="w-full border-2 md:border-purple-900 p-1 rounded"></input>
+                    <input type="email" id="mail" required placeholder="Enter your email..." className="w-full my-7 border-2 border-purple-900 p-1 rounded"></input>
+                    <textarea id="msg" required placeholder="Enter your message..." className="w-full h-[150px] border-2 border-purple-900 p-1 rounded"></textarea>
+                    <button type="submit" className="mt-5 bg-amber-400 rounded py-2 px-3 text-black font-bold sm:text-xl text-lg">SUBMIT</button>
                 </form>
             </div>
         </div>

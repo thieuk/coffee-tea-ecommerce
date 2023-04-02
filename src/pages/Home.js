@@ -1,6 +1,7 @@
 import { coffeeData, teaData } from '../data';
 import Item from '../components/Item';
 import DealSlider from '../components/DealSlider';
+import { toast } from 'react-hot-toast';
 
 export default function Home() {
     const popularProduct = [
@@ -42,8 +43,8 @@ export default function Home() {
                     <h2 className="w-[90%] my-4 md:text-2xl sm:text-xl text-lg font-extrabold text-center">
                         Sign Up for Our Newsletter for a Chance to Win a $100 Gift Card
                     </h2>
-                    <form className="flex flex-col items-center">
-                        <input type="email" placeholder="Enter your email..." required className="md:w-[150%] w-full mt-4 mb-3 md:p-3 p-2 md:text-xl text-lg text-black rounded border-4 border-purple-900"></input>
+                    <form onSubmit={(event) => { event.preventDefault(); toast.success("Thanks for Signing Up.")}} className="flex flex-col items-center">
+                        <input type="email" placeholder="Enter your email..." required autocomplete="email" className="md:w-[150%] w-full mt-4 mb-3 md:p-3 p-2 md:text-xl text-lg text-black rounded border-4 border-purple-900"></input>
                         <input type="submit" value="SIGN UP TO WIN NOW" className="md:w-[150%] w-full bg-amber-400 md:text-xl text-lg hover:bg-yellow-500 rounded md:p-2 p-1 text-black font-extrabold cursor-pointer border-2 border-black" />
                     </form>
                 </div>

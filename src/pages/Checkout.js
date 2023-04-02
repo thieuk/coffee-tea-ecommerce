@@ -39,7 +39,7 @@ export default function Checkout() {
                     ))}
                 </div>
             </div>
-            <form className="md:w-[400px] w-[350px] h-fit border-2 rounded-lg p-10 md:mt-0 mt-5 shadow-[0_0_15px_rgba(126,34,206,0.2)]">
+            <form onSubmit={(event) => { event.preventDefault(); toast.success("Thank You for Purchasing!"); setCart([]); setcartLength(0)} } className="md:w-[400px] w-[350px] h-fit border-2 rounded-lg p-10 md:mt-0 mt-5 shadow-[0_0_15px_rgba(126,34,206,0.2)]">
                 <input className={inputStyle} type="text" placeholder="Name" required/>
                 <input className={inputStyle} type="mail" placeholder="Email"/>
                 <p className="italic text-sm text-neutral-500">*Email Optional</p>
@@ -58,7 +58,7 @@ export default function Checkout() {
                 <input className={inputStyle} type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" placeholder="Card Number" required />
                 <input className={inputStyle} type="tel" inputmode="numeric" pattern="[0-9]{2}[\s]?[//]?[\s]?[0-9]{2}" placeholder="MM / YY" required />
                 <input className={inputStyle} type="tel" inputmode="numeric" pattern="[0-9]{3}" placeholder="CVC" required />
-                <button onClick={() => {toast.success("Thank You for Purchasing!"); setCart([]); setcartLength(0)}} className="w-full rounded py-1 md:font-extrabold font-bold bg-amber-400 hover:bg-amber-500" type="submit">Place Order</button>
+                <button className="w-full rounded py-1 md:font-extrabold font-bold bg-amber-400 hover:bg-amber-500" type="submit">Place Order</button>
             </form>
             </>
             : <div className="mt-[-50px]"><Cart /></div>}
