@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { CartContext } from "../App";
+import { CartContext, CartLengthContext } from "../App";
 import toast from 'react-hot-toast';
 
 function itemInCart(cart, id) {
@@ -19,7 +19,10 @@ function itemInCart(cart, id) {
 
 export default function Item(prop) {
     const [cart, setCart] = useContext(CartContext);
+    const [cartLength, setCartLength] = useContext(CartLengthContext);
+
     const handleAddToCart = () => setCart(oldArray => [...oldArray, valueForCart]);
+
     let valueForCart = {
         id: prop.id,
         img: prop.img,
@@ -39,7 +42,7 @@ export default function Item(prop) {
             <h2 className="w-[80%] text-center sm:text-lg text-xs text-ellipsis font-bold overflow-hidden whitespace-nowrap">{`${prop.item}`}</h2>
             <p className="sm:text-md text-xs ">{`$${prop.price}`}</p>
             <button className="font-bold text-purple-900 border-2 border-purple-900 rounded-2xl px-2 py-0 m-2 md:px-2 md:py-1 md:text-base text-sm hover:bg-purple-900 hover:text-amber-400"
-                    onClick={() => { if (!itemInCart(cart, prop.id)) { handleAddToCart() } }} >
+                    onClick={() => { if (!itemInCart(cart, prop.id)) { handleAddToCart(); setCartLength(cartLength + 1); } }} >
                 Add to Cart
             </button>
         </div>  

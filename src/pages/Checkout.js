@@ -1,11 +1,13 @@
 import { useContext } from "react";
-import { CartContext } from "../App";
+import { CartContext, CartLengthContext } from "../App";
 import calculateCost from "../utilities/calculateCost";
 import Cart from "./Cart";
 import { toast } from "react-hot-toast";
 
 export default function Checkout() {
     const [cart, setCart] = useContext(CartContext);
+    const [cartLength, setcartLength] = useContext(CartLengthContext);
+
     const cost = calculateCost(cart);
     const inputStyle = "block w-full border-2 border-black rounded p-1 mb-1";
 
@@ -56,7 +58,7 @@ export default function Checkout() {
                 <input className={inputStyle} type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" placeholder="Card Number" required />
                 <input className={inputStyle} type="tel" inputmode="numeric" pattern="[0-9]{2}[\s]?[//]?[\s]?[0-9]{2}" placeholder="MM / YY" required />
                 <input className={inputStyle} type="tel" inputmode="numeric" pattern="[0-9]{3}" placeholder="CVC" required />
-                <button onClick={() => {toast.success("Thank You for Purchasing!"); setCart([]);}} className="w-full rounded py-1 md:font-extrabold font-bold bg-amber-400 hover:bg-amber-500" type="submit">Place Order</button>
+                <button onClick={() => {toast.success("Thank You for Purchasing!"); setCart([]); setcartLength(0)}} className="w-full rounded py-1 md:font-extrabold font-bold bg-amber-400 hover:bg-amber-500" type="submit">Place Order</button>
             </form>
             </>
             : <div className="mt-[-50px]"><Cart /></div>}

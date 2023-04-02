@@ -15,13 +15,17 @@ const NotFound = lazy(() => import('./pages/NotFound'));
 const Checkout = lazy(() => import('./pages/Checkout'));
 
 export const CartContext = createContext();
+export const CartLengthContext = createContext();
+
 
 function App() {
   const [cart, setCart] = useState([]);
+  const [cartLength, setCartLength] = useState(0);
 
   return (
     <div className="App">
       <CartContext.Provider value={[cart, setCart]}>
+      <CartLengthContext.Provider value={[cartLength, setCartLength]}>
         <Router>
           <Suspense>
             <Navbar />
@@ -47,6 +51,7 @@ function App() {
               }}/>
           </Suspense>
         </Router>
+      </CartLengthContext.Provider>
       </CartContext.Provider>
     </div>
   );

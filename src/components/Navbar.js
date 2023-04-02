@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-import { useState } from "react";
+import { useContext } from "react";
+import { CartLengthContext } from "../App";
 
 function dropdown() {
     const dropdownBttn = document.querySelector(".dropdown-bttn");
@@ -19,7 +20,7 @@ function handleClick() {
 }
 
 export default function Navbar() {
-    const [quantity, setQuantity] = useState(0);
+    const [cartLength, setcartLength] = useContext(CartLengthContext);
 
     return (
         <nav className="sticky top-0 flex items-center h-[65px] shadow-lg bg-white z-[99]">
@@ -41,7 +42,7 @@ export default function Navbar() {
                 <Link to="/contact" className="hover:border-b-4 border-black">Contact</Link>
                 <div className="relative">
                     <Link to="/cart" title="Checkout" className="material-symbols-outlined">shopping_cart_checkout</Link>
-                    <span className="absolute top-[-12px] right-[-12px] flex justify-center items-center scale-[0.65] bg-red-700 rounded-full text-white aspect-square w-7">{quantity}</span>
+                    <Link to="/cart" className="absolute top-[-12px] right-[-12px] flex justify-center items-center scale-[0.65] bg-red-700 rounded-full text-white aspect-square w-7">{cartLength}</Link>
                 </div>
                 <Link to="/account" title="Account">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-7 h-7 mr-7">
