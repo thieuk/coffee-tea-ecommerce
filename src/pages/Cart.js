@@ -1,21 +1,10 @@
 import { useContext } from "react";
 import { CartContext } from "../App";
 import { Link } from "react-router-dom";
+import QuantityController from "../components/QuantityController";
 
 export default function Cart() {
     const [cart, setCart] = useContext(CartContext);
-
-    const handleRemoveItem = (id) => { 
-        setCart(cart.filter(item => item.id !== id)); 
-    };
-
-    const handleIncreaseQuantity = (id) => {
-        setCart(cart.map(item => item.id === id && item.quantity < 99 ? {...item, quantity: item.quantity + 1} : {...item}));
-    };
-
-    const handleDecreaseQuantity = (id) => {
-        setCart(cart.map(item => item.id === id && item.quantity > 1 ? {...item, quantity: item.quantity - 1} : {...item})); 
-    };
 
     return (
         <div className="flex justify-center mt-[50px]">
@@ -28,14 +17,7 @@ export default function Cart() {
                             <div>
                                 <p className="max-w-[200px] font-bold text-ellipsis overflow-hidden whitespace-nowrap">{product.item}</p>
                                 <p>${product.price}</p>
-                                <div className="flex">
-                                    <div className="h-[30px] w-fit border-2 border-blue-600 rounded">
-                                        <button onClick={() => handleIncreaseQuantity(product.id)} className="h-full rounded-l-xs bg-blue-600 text-white px-1 font-extrabold">+</button>
-                                        <input type="text" value={product.quantity} disabled className="text-center w-7"/>
-                                        <button onClick={() => handleDecreaseQuantity(product.id)} className="h-full rounded-r-xs bg-blue-600 text-white px-[6px] font-extrabold">-</button>
-                                    </div>
-                                    <button onClick={() => handleRemoveItem(product.id)} className="ml-5 py-1 px-2 rounded text-white bg-red-600 text-sm">remove</button>
-                                </div>
+                                <QuantityController product={product} removeButton={true} />
                             </div>
                         </div>
                     )) :

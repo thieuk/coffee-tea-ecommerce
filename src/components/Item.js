@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { CartContext, CartLengthContext } from "../App";
-import toast from 'react-hot-toast';
+import QuantityController from "./QuantityController";
 
 function itemInCart(cart, id) {
     let exist = false;
@@ -11,8 +11,6 @@ function itemInCart(cart, id) {
             break;
         }
     }
-
-    exist ? toast("Item Already in Cart.") : toast.success("Item Added to Cart.");
 
     return exist;
 }
@@ -32,7 +30,7 @@ export default function Item(prop) {
     };
 
     return (
-        <div className="flex flex-col items-center border-2 border-neutral-200 shadow-lg rounded h-fit sm:p-5 py-5 md:w-[240px] sm:w-[180px] w-[150px]">
+        <div className="flex flex-col items-center border-2 border-neutral-200 shadow-lg rounded h-fit sm:p-5 py-5 md:w-[240px] sm:w-[180px] w-[150px] md:h-[330px] sm:h-[210px] h-[210px]">
             <div className="w-[80%] md:h-[160px] sm:h-[120px] h-[60px] pb-2">
                 <img src={require(`../img/${prop.img}`)} alt="item" className="h-full mx-auto object-contain"/>
             </div>
@@ -40,11 +38,13 @@ export default function Item(prop) {
                 {`${prop.brand}`}
             </h1>
             <h2 className="w-[80%] text-center sm:text-lg text-xs text-ellipsis font-bold overflow-hidden whitespace-nowrap">{`${prop.item}`}</h2>
-            <p className="sm:text-md text-xs ">{`$${prop.price}`}</p>
+            <p className="sm:text-base text-sm ">{`$${prop.price}`}</p>
+            {!itemInCart(cart, prop.id) ? 
             <button className="font-bold text-purple-900 border-2 border-purple-900 rounded-2xl px-2 py-0 m-2 md:px-2 md:py-1 md:text-base text-sm hover:bg-purple-900 hover:text-amber-400"
-                    onClick={() => { if (!itemInCart(cart, prop.id)) { handleAddToCart(); setCartLength(cartLength + 1); } }} >
+                    onClick={() => { { handleAddToCart(); setCartLength(cartLength + 1); } }} >
                 Add to Cart
-            </button>
+            </button> : <QuantityController product={valueForCart} removeButton={false} />
+            }
         </div>  
     );
 }
