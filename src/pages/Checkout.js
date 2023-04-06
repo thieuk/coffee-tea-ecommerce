@@ -27,7 +27,7 @@ export default function Checkout() {
                     </div>
                 </div>
                 <div className="md:w-[300px] w-[350px] h-fit min-h-[368px] border-2 rounded-lg md:mr-5 p-7 shadow-[0_0_15px_rgba(126,34,206,0.2)]">
-                    <h1 className="text-center font-bold text-lg mb-3">Order Summary</h1>
+                    <h1 className="text-center font-bold text-lg mb-3">Your Order</h1>
                     <hr className="border-t-2"/>
                     {cart.map(product => (
                         <div className="pt-5">
@@ -55,7 +55,7 @@ export default function Checkout() {
                     <button onClick={() => toast.error("Invalid Code.")} className="w-[40%] ml-[5%] md:font-bold font-base  bg-purple-700 text-white rounded">Apply Code</button>
                 </div>
                 <p className="text-lg">Credit Card Information</p>
-                <input className={inputStyle} type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" placeholder="Card Number" required />
+                <input className={inputStyle} type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autoComplete="cc-number" placeholder="Card Number" required />
                 <input className={inputStyle} type="tel" inputmode="numeric" pattern="[0-9]{2}[\s]?[//]?[\s]?[0-9]{2}" placeholder="MM / YY" required />
                 <input className={inputStyle} type="tel" inputmode="numeric" pattern="[0-9]{3}" placeholder="CVC" required />
                 <button className="w-full rounded py-1 md:font-extrabold font-bold bg-amber-400 hover:bg-amber-500" type="submit">Place Order</button>

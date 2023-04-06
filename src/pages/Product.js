@@ -17,7 +17,7 @@ export default function Product() {
                 <Filter itemData={itemData}/>
                 <div className="flex flex-wrap w-full justify-center mt-5 gap-12">
                     { itemData[2].item.map((data) => (
-                        <Item key={data.id} img={data.img} brand={data.brand} item={data.item} price={data.price} id={data.id}/>
+                        <Item key={data.id} img={data.img} brand={data.brand} item={data.item} price={data.price} id={data.id} sale={data.sale} discount={data.discount} />
                     )) }
                 </div>
             </div>

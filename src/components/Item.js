@@ -26,6 +26,8 @@ export default function Item(prop) {
         img: prop.img,
         price: prop.price,
         item: prop.item,
+        sale: prop.sale,
+        discount: prop.discount,
         quantity: 1
     };
 
@@ -38,7 +40,13 @@ export default function Item(prop) {
                 {`${prop.brand}`}
             </h1>
             <h2 className="w-[80%] text-center sm:text-lg text-xs text-ellipsis font-bold overflow-hidden whitespace-nowrap">{`${prop.item}`}</h2>
-            <p className="sm:text-base text-sm ">{`$${prop.price}`}</p>
+            {prop.sale ? 
+                <p>
+                    <span className="text-neutral-600 mr-2 line-through">${prop.price}</span>
+                    <span>${(parseFloat(prop.price) - parseFloat(prop.price) * prop.discount).toFixed(2)}</span>
+                </p>
+            : <p className="sm:text-base text-sm">{`$${prop.price}`}</p>}
+                                    
             {!itemInCart(cart, prop.id) ? 
             <button className="font-bold text-purple-900 border-2 border-purple-900 rounded-2xl px-2 py-0 m-2 md:px-2 md:py-1 md:text-base text-sm hover:bg-purple-900 hover:text-amber-400"
                     onClick={() => { { handleAddToCart(); setCartLength(cartLength + 1); } }} >

@@ -9,7 +9,7 @@ export default function calculateCost(cart) {
         total: 0
     }
 
-    cart.map(item => cost.items += item.price * item.quantity);
+    cart.map(item => cost.items += (item.price - item.price * item.discount) * item.quantity);
     cost.items >= freeShipping ? cost.shipping = 0 : cost.shipping = shipping;
     cost.tax = cost.items * tax;
     cost.total = cost.items + cost.shipping + cost.tax;
