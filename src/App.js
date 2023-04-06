@@ -17,7 +17,6 @@ const Checkout = lazy(() => import('./pages/Checkout'));
 export const CartContext = createContext();
 export const CartLengthContext = createContext();
 
-
 function App() {
   const [cart, setCart] = useState([]);
   const [cartLength, setCartLength] = useState(0);

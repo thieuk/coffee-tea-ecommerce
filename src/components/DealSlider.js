@@ -1,3 +1,5 @@
+import Item from "./Item";
+
 let currLocation = 0;
 
 function slideLeft() {
@@ -19,6 +21,7 @@ function slideRight() {
 }
 
 export default function DealSlider(props) {
+
     return (
         <div id="slider" className="relative">
             <hr className="absolute w-full top-5 z-[-1] border-t-4 border-purple-800" />
@@ -29,21 +32,11 @@ export default function DealSlider(props) {
             </div>
             <div className="border-b-4 border-purple-800 overflow-x-hidden">
                 <div id="saleItems" className="flex w-[500vw] sm:transition-transform sm:duration-1000">
-                    {props.items.map((item) => (
-                        <div key={item.id} className="w-full flex justify-center items-center my-9">
-                            <img src={require(`../img/${item.img}`)} alt="featured coffee" className="md:h-[175px] sm:h-[135px] h-[110px]"/>
-                            <div>
-                                <h1 className="font-bold md:text-3xl sm:text-2xl text-lg">{item.brand}</h1>
-                                <h2 className="font-bold md:text-xl sm:text-lg text-sm">{item.item}</h2>
-                                <p className="md:text-base text-sm">
-                                    <span className="text-neutral-500 mr-2 line-through">${item.price}</span>
-                                    ${(parseFloat(item.price) - parseFloat(item.price) * item.discount).toFixed(2)}
-                                </p>
-                                <button className="bg-amber-400 mx-auto px-2 py-1 mt-2 rounded text-black font-bold hover:bg-yellow-500 md:text-base sm:text-sm text-xs">
-                                    Add to Cart
-                                </button>
-                            </div>
+                    {props.items.map((product) => ( 
+                        <div key={product.id} className="w-full flex justify-center items-center my-9">
+                            <Item img={product.img} brand={product.brand} item={product.item} price={product.price} id={product.id} sale={product.sale} discount={product.discount} />
                         </div>
+                        
                     ))}
                 </div>
                 <div id="saleItemLoc" className="w-full flex justify-center gap-3 mb-4">
