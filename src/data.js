@@ -15,6 +15,8 @@ export const coffeeData = [
             taste: "Notes of Hazelnuts and Brown Sugar",
             weight: "2.2 lbs",
             price: "22.99",
+            sale: false,
+            discount: 0,
             id: 1
         },
         {
@@ -25,6 +27,8 @@ export const coffeeData = [
             taste: "Aromatic, Flavorful, and Balanced ",
             weight: "2 lbs",
             price: "22.99",
+            sale: false,
+            discount: 0,
             id: 2
         },
         {
@@ -35,6 +39,8 @@ export const coffeeData = [
             taste: "Notes of Cocoa and Rich Praline",
             weight: "18 oz",
             price: "13.99",
+            sale: true,
+            discount: 0.25,
             id: 3
         },
         {
@@ -45,6 +51,8 @@ export const coffeeData = [
             taste: "Notes of Milk Chocolate, Nuts, and Brownie",
             weight: "12 oz",
             price: "13.99",
+            sale: true,
+            discount: 0.25,
             id: 4
         },
         {
@@ -55,6 +63,8 @@ export const coffeeData = [
             taste: "Notes of Citrus Zest, Caramel and Hazelnut",
             weight: "12 oz",
             price: "15.99",
+            sale: true,
+            discount: 0.25,
             id: 5
         },
         {
@@ -65,6 +75,8 @@ export const coffeeData = [
             taste: "Notes of Brown Sugar and Sweet Orange ",
             weight: "18 oz",
             price: "12.99",
+            sale: false,
+            discount: 0,
             id: 6
         },
         {
@@ -75,6 +87,8 @@ export const coffeeData = [
             taste: "Notes of Cocoa and Raw Honey",
             weight: "5 lbs",
             price: "43.99",
+            sale: false,
+            discount: 0,
             id: 7
         },
         {
@@ -85,6 +99,8 @@ export const coffeeData = [
             taste: "Flavor of Irish Cream liqueur without the alcohol",
             weight: "12 oz",
             price: "17.99",
+            sale: false,
+            discount: 0,
             id: 8
         },
         {
@@ -95,6 +111,8 @@ export const coffeeData = [
             taste: "Intense, Smoky, and Full",
             weight: "12 oz",
             price: "9.99",
+            sale: false,
+            discount: 0,
             id: 9
         },
         {
@@ -105,6 +123,8 @@ export const coffeeData = [
             taste: "Light-bodied with a subtle fruity aroma and buttery finish",
             weight: "12 oz",
             price: "9.99",
+            sale: false,
+            discount: 0,
             id: 10
         },
         {
@@ -115,6 +135,8 @@ export const coffeeData = [
             taste: "Notes of Milk Chocolate, Citrus and Apple",
             weight: "12 oz",
             price: "14.99",
+            sale: false,
+            discount: 0,
             id: 11
         },
         {
@@ -125,6 +147,8 @@ export const coffeeData = [
             taste: "Notes of Almonds, Chocolate Mousse, and Rum Cake",
             weight: "12 oz",
             price: "13.99",
+            sale: false,
+            discount: 0,
             id: 12
         }]
     }
@@ -150,6 +174,8 @@ export const teaData = [
             amount: "1.4 oz",
             price: "23.99",
             leaf: "Powder",
+            sale: true,
+            discount: 0.25,
             id: 13
         },
         {
@@ -159,6 +185,8 @@ export const teaData = [
             amount: "4.41 oz",
             price: "8.99",
             leaf: "Loose Leaf",
+            sale: true,
+            discount: 0.25,
             id: 14
         },
         {
@@ -168,6 +196,8 @@ export const teaData = [
             amount: "4 oz",
             price: "11.99",
             leaf: "Loose Leaf",
+            sale: false,
+            discount: 0,
             id: 15
         },
         {
@@ -177,6 +207,8 @@ export const teaData = [
             amount: "1.9 lbs",
             price: "17.99",
             leaf: "Powder",
+            sale: false,
+            discount: 0,
             id: 16
         },
         {
@@ -186,6 +218,8 @@ export const teaData = [
             amount: "3.5 oz",
             price: "14.99",
             leaf: "Loose Leaf",
+            sale: false,
+            discount: 0,
             id: 17
         },
         {
@@ -195,6 +229,8 @@ export const teaData = [
             amount: "30 Count",
             price: "12.99",
             leaf: "Teabag",
+            sale: false,
+            discount: 0,
             id: 18
         },
         {
@@ -204,6 +240,8 @@ export const teaData = [
             amount: "120 Count",
             price: "18.99",
             leaf: "Teabag",
+            sale: false,
+            discount: 0,
             id: 19
         },
         {
@@ -213,6 +251,8 @@ export const teaData = [
             amount: "8 oz",
             price: "14.99",
             leaf: "Loose Leaf",
+            sale: false,
+            discount: 0,
             id: 20
         },
         {
@@ -222,6 +262,8 @@ export const teaData = [
             amount: "100 Count",
             price: "8.99",
             leaf: "Teabag",
+            sale: false,
+            discount: 0,
             id: 21
         },
         {
@@ -231,6 +273,8 @@ export const teaData = [
             amount: "16 oz",
             price: "16.99",
             leaf: "Loose Leaf",
+            sale: false,
+            discount: 0,
             id: 22
         },
         {
@@ -240,6 +284,8 @@ export const teaData = [
             amount: "70 Count",
             price: "14.99",
             leaf: "Teabag",
+            sale: false,
+            discount: 0,
             id: 23
         },
         {
@@ -249,6 +295,8 @@ export const teaData = [
             amount: "100 Count",
             price: "20.99",
             leaf: "Teabag",
+            sale: false,
+            discount: 0,
             id: 24
         }]
     }
