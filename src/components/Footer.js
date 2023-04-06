@@ -28,7 +28,7 @@ export default function Footer() {
                 </div>
                 <form onSubmit={(event) => { event.preventDefault(); toast.success("Thanks for Signing Up.")} } className="flex flex-col items-center">
                     <h3 className="font-bold">SIGN UP FOR NEWSLETTER</h3>
-                    <input type="email" placeholder="Enter your email..." required autocomplete="email" className="w-full mt-2 mb-3 p-2 text-black rounded"></input>
+                    <input type="email" placeholder="Enter your email..." required autoComplete="email" className="w-full mt-2 mb-3 p-2 text-black rounded"></input>
                     <input type="submit" value="SUBSCRIBE" className="w-full bg-amber-400 hover:bg-yellow-500 rounded py-2 px-3 text-black font-bold cursor-pointer" />
                 </form>
             </div>

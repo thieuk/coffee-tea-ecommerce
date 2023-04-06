@@ -29,8 +29,8 @@ export default function Home() {
                 </h1>
                 <div className="flex flex-wrap justify-center items-center sm:w-[80%] w-[90%] max-w-[1000px] mb-[35px]">
                     {popularProduct.map((product) => (
-                        <div className="sm:scale-[0.85] scale-95">
-                            <Item id={product.id} img={product.img} brand={product.brand} item={product.item} price={product.price} />
+                        <div key={product.id} className="sm:scale-[0.85] scale-95">
+                            <Item id={product.id} img={product.img} brand={product.brand} item={product.item} price={product.price} sale={product.sale} discount={product.discount} />
                         </div>
                     ))}
                 </div>
@@ -44,7 +44,7 @@ export default function Home() {
                         Sign Up for Our Newsletter for a Chance to Win a $100 Gift Card
                     </h2>
                     <form onSubmit={(event) => { event.preventDefault(); toast.success("Thanks for Signing Up.")}} className="flex flex-col items-center">
-                        <input type="email" placeholder="Enter your email..." required autocomplete="email" className="md:w-[150%] w-full mt-4 mb-3 md:p-3 p-2 md:text-xl text-lg text-black rounded border-4 border-purple-900"></input>
+                        <input type="email" placeholder="Enter your email..." required autoComplete="email" className="md:w-[150%] w-full mt-4 mb-3 md:p-3 p-2 md:text-xl text-lg text-black rounded border-4 border-purple-900"></input>
                         <input type="submit" value="SIGN UP TO WIN NOW" className="md:w-[150%] w-full bg-amber-400 md:text-xl text-lg hover:bg-yellow-500 rounded md:p-2 p-1 text-black font-extrabold cursor-pointer border-2 border-black" />
                     </form>
                 </div>
