@@ -2,6 +2,16 @@ import { Link } from 'react-router-dom';
 import { toast } from 'react-hot-toast';
 
 export default function Footer() {
+    const handleDisplayMsg = () => {
+        toast("This is just a frontend project. \nThis page does not exist.", 
+        { duration: 4000, 
+            style: {
+                textAlign: "center",
+                color: "#fcd34d"
+            }
+        });
+    }
+
     return (
         <footer className="bg-purple-900 text-white w-full mt-[50px]">
             <div className="flex gap-x-[10vw] gap-y-[5vw] p-5 w-fit mx-auto md:flex-row flex-col sm:text-base text-sm">
@@ -9,21 +19,20 @@ export default function Footer() {
                     <div className="flex flex-col">
                         <h3 className="font-bold">COMPANY</h3>
                         <Link to="/about">About us</Link>
-                        <Link to="/notFound">Code of Ethics</Link>
-                        <Link to="/notFound">Careers</Link>
-                        <Link to="/notFound">Return Policy</Link>
+                        <button onClick={handleDisplayMsg} className="text-left">Code of Ethics</button>
+                        <button onClick={handleDisplayMsg} className="text-left">Careers</button>
+                        <button onClick={handleDisplayMsg} className="text-left">Return Policy</button>
                     </div>
                     <div className="flex flex-col">
                         <h3 className="font-bold">PRODUCTS</h3>
                         <Link to="/product/coffee">Coffee</Link>
                         <Link to="/product/tea">Tea</Link>
-                        <Link to="/notFound">Brewing Tools</Link>
                     </div>
                     <div className="flex flex-col">
                         <h3 className="font-bold">SOCIAL</h3>
-                        <Link to="/notFound">Facebook</Link>
-                        <Link to="/notFound">Instagram</Link>
-                        <Link to="/notFound">Twitter</Link>
+                        <button onClick={handleDisplayMsg} className="text-left">Facebook</button>
+                        <button onClick={handleDisplayMsg} className="text-left">Instagram</button>
+                        <button onClick={handleDisplayMsg} className="text-left">Twitter</button>
                     </div>
                 </div>
                 <form onSubmit={(event) => { event.preventDefault(); toast.success("Thanks for Signing Up.")} } className="flex flex-col items-center">
