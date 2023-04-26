@@ -1,9 +1,10 @@
-## Visit the site 
+## Demo site 
 https://thieuk.github.io/coffee-tea-ecommerce/
 
 ## How to Run Locally
 
-You need to install Node.js. Go to this link https://nodejs.org/en/download/ and install Node. <br>
+You need to install Node.js. 
+Go to this link https://nodejs.org/en/download/ and install Node. 
 
 ### Once Node.js is installed:
 * Open terminal
