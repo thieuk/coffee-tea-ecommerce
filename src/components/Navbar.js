@@ -20,7 +20,7 @@ function handleClick() {
 }
 
 export default function Navbar() {
-    const [cartLength, setcartLength] = useContext(CartLengthContext);
+    const [ cartLength ] = useContext(CartLengthContext);
 
     return (
         <nav className="sticky top-0 flex items-center h-[65px] shadow-lg bg-white z-[99]">

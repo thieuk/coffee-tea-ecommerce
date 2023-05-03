@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import QuantityController from "../components/QuantityController";
 
 export default function Cart() {
-    const [cart, setCart] = useContext(CartContext);
+    const [ cart ] = useContext(CartContext);
 
     return (
         <div className="flex justify-center mt-[50px]">

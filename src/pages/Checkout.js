@@ -6,7 +6,7 @@ import { toast } from "react-hot-toast";
 
 export default function Checkout() {
     const [cart, setCart] = useContext(CartContext);
-    const [cartLength, setcartLength] = useContext(CartLengthContext);
+    const [, setcartLength] = useContext(CartLengthContext);
 
     const cost = calculateCost(cart);
     const inputStyle = "block w-full border-2 border-black rounded p-1 mb-1";

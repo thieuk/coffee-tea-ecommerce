@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { CartContext, CartLengthContext } from "../App";
 
 export default function QuantityController(props) {
