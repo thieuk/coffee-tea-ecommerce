@@ -20,7 +20,7 @@ export default function Item(props) {
 
 
     return (
-        <div className="flex flex-col items-center bg-white border-2 border-neutral-200 shadow-lg rounded h-fit sm:p-5 py-5 md:w-[240px] sm:w-[180px] w-[150px] md:h-[330px] sm:h-[210px] h-[210px]">
+        <div className="flex flex-col items-center bg-white border-2 border-neutral-200 shadow-lg rounded h-fit sm:p-5 py-5 md:w-[240px] sm:w-[180px] w-[150px] md:h-[330px]">
             <div className="w-[80%] md:h-[160px] sm:h-[120px] h-[60px] pb-2">
                 <img src={require(`../img/${props.img}`)} alt="item" className="h-full mx-auto object-contain"/>
             </div>
