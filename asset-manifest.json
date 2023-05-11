@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/coffee-tea-ecommerce/static/css/main.6eadb5fa.css",
-    "main.js": "/coffee-tea-ecommerce/static/js/main.9c8ec6ef.js",
+    "main.css": "/coffee-tea-ecommerce/static/css/main.4a2ab041.css",
+    "main.js": "/coffee-tea-ecommerce/static/js/main.1cd3ef67.js",
     "static/css/333.f97b6053.chunk.css": "/coffee-tea-ecommerce/static/css/333.f97b6053.chunk.css",
-    "static/js/333.a680a3ea.chunk.js": "/coffee-tea-ecommerce/static/js/333.a680a3ea.chunk.js",
+    "static/js/333.d5dbba9b.chunk.js": "/coffee-tea-ecommerce/static/js/333.d5dbba9b.chunk.js",
     "static/js/964.55f0357f.chunk.js": "/coffee-tea-ecommerce/static/js/964.55f0357f.chunk.js",
     "static/js/562.05eac401.chunk.js": "/coffee-tea-ecommerce/static/js/562.05eac401.chunk.js",
     "static/js/460.d15d5182.chunk.js": "/coffee-tea-ecommerce/static/js/460.d15d5182.chunk.js",
@@ -40,10 +40,10 @@
     "static/media/coffee11.jpg": "/coffee-tea-ecommerce/static/media/coffee11.f31f8b7089dcd487301b.jpg",
     "static/media/coffee7.jpg": "/coffee-tea-ecommerce/static/media/coffee7.dbb38c9448df4831d370.jpg",
     "index.html": "/coffee-tea-ecommerce/index.html",
-    "main.6eadb5fa.css.map": "/coffee-tea-ecommerce/static/css/main.6eadb5fa.css.map",
-    "main.9c8ec6ef.js.map": "/coffee-tea-ecommerce/static/js/main.9c8ec6ef.js.map",
+    "main.4a2ab041.css.map": "/coffee-tea-ecommerce/static/css/main.4a2ab041.css.map",
+    "main.1cd3ef67.js.map": "/coffee-tea-ecommerce/static/js/main.1cd3ef67.js.map",
     "333.f97b6053.chunk.css.map": "/coffee-tea-ecommerce/static/css/333.f97b6053.chunk.css.map",
-    "333.a680a3ea.chunk.js.map": "/coffee-tea-ecommerce/static/js/333.a680a3ea.chunk.js.map",
+    "333.d5dbba9b.chunk.js.map": "/coffee-tea-ecommerce/static/js/333.d5dbba9b.chunk.js.map",
     "964.55f0357f.chunk.js.map": "/coffee-tea-ecommerce/static/js/964.55f0357f.chunk.js.map",
     "562.05eac401.chunk.js.map": "/coffee-tea-ecommerce/static/js/562.05eac401.chunk.js.map",
     "460.d15d5182.chunk.js.map": "/coffee-tea-ecommerce/static/js/460.d15d5182.chunk.js.map",
@@ -52,7 +52,7 @@
     "198.a74e8b03.chunk.js.map": "/coffee-tea-ecommerce/static/js/198.a74e8b03.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6eadb5fa.css",
-    "static/js/main.9c8ec6ef.js"
+    "static/css/main.4a2ab041.css",
+    "static/js/main.1cd3ef67.js"
   ]
 }
