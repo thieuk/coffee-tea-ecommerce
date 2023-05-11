@@ -29,7 +29,8 @@ export default function Filter(props) {
 
                             {data.subCategory.map((sub) => (
                                 <div>
-                                    <input type="checkbox" id={`${data}-${sub.replace(" ", "-")}`} value={sub} />
+                                    <input type="checkbox" id={`${data}-${sub.replace(" ", "-")}`} value={sub} 
+                                        className="border-[1px] border-black mr-1"/>
                                     <label htmlFor={`${data}-${sub.replace(" ", "-")}`}>{sub}</label>
                                 </div>
                             ))}

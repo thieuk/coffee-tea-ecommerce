@@ -36,8 +36,8 @@ export default function Item(props) {
             : <p className="sm:text-base text-sm">{`$${props.price}`}</p>}
                                     
             {!itemInCart(cart, props.id) ? 
-            <button className="font-bold text-purple-900 border-2 border-purple-900 rounded-2xl px-2 py-0 m-2 md:px-2 md:py-1 md:text-base text-sm hover:bg-purple-900 hover:text-amber-400"
-                    onClick={() => { handleAddToCart(); setCartLength(cartLength + 1); }} >
+            <button className="font-bold text-purple-900 border-2 border-purple-900 rounded-2xl px-2 py-1 m-2 md:text-base text-sm hover:bg-purple-900 hover:text-amber-400"
+                onClick={() => { handleAddToCart(); setCartLength(cartLength + 1); }} >
                 Add to Cart
             </button> : <QuantityController product={valueForCart} removeButton={false} />}
         </div>  

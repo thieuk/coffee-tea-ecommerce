@@ -42,10 +42,10 @@ export default function Navbar() {
                 <Link to="/contact" className="hover:border-b-4 border-black">Contact</Link>
                 <div className="relative">
                     <Link to="/cart" title="Checkout" className="material-symbols-outlined">shopping_cart_checkout</Link>
-                    <Link to="/cart" className="absolute top-[-12px] right-[-12px] flex justify-center items-center scale-[0.65] bg-red-700 rounded-full text-white aspect-square w-7">{cartLength}</Link>
+                    <Link to="/cart" className="absolute top-[-12px] right-[-12px] flex justify-center items-center scale-[0.65] bg-red-700 rounded-full text-white w-7 h-7">{cartLength}</Link>
                 </div>
                 <Link to="/account" title="Account">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-7 h-7 mr-7">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-7 h-7 mr-7 max-sm:mr-4 max-sm:ml-2">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
                 </Link>

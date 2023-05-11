@@ -15,7 +15,7 @@ export default function Product() {
             { <img src={require(`../img/${itemData[0].hero}`)} alt="hero img" className="w-screen" /> }
             <div className="relative flex">
                 <Filter itemData={itemData}/>
-                <div className="flex flex-wrap w-full justify-center mt-5 gap-12">
+                <div className="flex flex-wrap w-full justify-center mt-5 gap-12 max-sm:gap-5">
                     { itemData[2].item.map((data) => (
                         <Item key={data.id} img={data.img} brand={data.brand} item={data.item} price={data.price} id={data.id} sale={data.sale} discount={data.discount} />
                     )) }

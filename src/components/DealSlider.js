@@ -26,12 +26,12 @@ export default function DealSlider(props) {
         <div id="slider" className="relative">
             <hr className="absolute w-full top-5 z-[-1] border-t-4 border-purple-800" />
             <div className="w-fit mx-auto px-6 bg-white">
-                <h1 className="w-fit mt-9 text-center md:text-4xl text-2xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600 drop-shadow-lg">
+                <h1 className="w-fit mt-9 text-center md:text-4xl text-2xl font-extrabold drop-shadow-lg bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600">
                     Deals of the Week
                 </h1>
             </div>
             <div className="border-b-4 border-purple-800 overflow-x-hidden">
-                <div id="saleItems" className="flex w-[500vw] sm:transition-transform sm:duration-1000">
+                <div id="saleItems" className="flex w-[500vw] transition-transform duration-1000">
                     {props.items.map((product) => ( 
                         <div key={product.id} className="w-full flex justify-center items-center my-9">
                             <Item img={product.img} brand={product.brand} item={product.item} price={product.price} id={product.id} sale={product.sale} discount={product.discount} />
@@ -40,11 +40,11 @@ export default function DealSlider(props) {
                     ))}
                 </div>
                 <div id="saleItemLoc" className="w-full flex justify-center gap-3 mb-4">
-                    <span className="rounded-full w-[10px] aspect-square border-2 border-purple-900 bg-purple-900"></span>
-                    <span className="rounded-full w-[10px] aspect-square border-2 border-purple-900"></span>
-                    <span className="rounded-full w-[10px] aspect-square border-2 border-purple-900"></span>
-                    <span className="rounded-full w-[10px] aspect-square border-2 border-purple-900"></span>
-                    <span className="rounded-full w-[10px] aspect-square border-2 border-purple-900"></span>
+                    <span className="rounded-full w-[10px] h-[10px] border-2 border-purple-900 bg-purple-900"></span>
+                    <span className="rounded-full w-[10px] h-[10px] border-2 border-purple-900"></span>
+                    <span className="rounded-full w-[10px] h-[10px] border-2 border-purple-900"></span>
+                    <span className="rounded-full w-[10px] h-[10px] border-2 border-purple-900"></span>
+                    <span className="rounded-full w-[10px] h-[10px] border-2 border-purple-900"></span>
                 </div>
                 <button onClick={slideLeft} className="absolute top-[50%] left-0 h-[150px] translate-y-[calc(-50%+10px)] flex items-center p-2 bg-neutral-300 hover:bg-neutral-400">
                     <span className="material-symbols-outlined">arrow_back_ios</span>
