@@ -21,7 +21,6 @@ function slideRight() {
 }
 
 export default function DealSlider(props) {
-
     return (
         <div id="slider" className="relative">
             <hr className="absolute w-full top-5 z-[-1] border-t-4 border-purple-800" />
@@ -31,12 +30,11 @@ export default function DealSlider(props) {
                 </h1>
             </div>
             <div className="border-b-4 border-purple-800 overflow-x-hidden">
-                <div id="saleItems" className="flex w-[500vw] transition-transform duration-1000">
+                <div id="saleItems" className="flex w-[500vw] md:transition-transform md:duration-1000">
                     {props.items.map((product) => ( 
                         <div key={product.id} className="w-full flex justify-center items-center my-9">
                             <Item img={product.img} brand={product.brand} item={product.item} price={product.price} id={product.id} sale={product.sale} discount={product.discount} />
                         </div>
-                        
                     ))}
                 </div>
                 <div id="saleItemLoc" className="w-full flex justify-center gap-3 mb-4">

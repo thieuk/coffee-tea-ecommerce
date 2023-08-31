@@ -13,26 +13,26 @@ export default function Footer() {
     }
 
     return (
-        <footer className="bg-purple-900 text-white w-full mt-[50px]">
-            <div className="flex gap-x-[10vw] gap-y-[5vw] p-5 w-fit mx-auto md:flex-row flex-col sm:text-base text-sm">
+        <footer className="bg-purple-900 text-white w-full mt-[50px] p-10">
+            <div className="flex gap-x-[10vw] gap-y-[5vw] w-fit mx-auto md:flex-row flex-col sm:text-base text-sm">
                 <div className="flex gap-[10vw]">
                     <div className="flex flex-col">
-                        <h3 className="font-bold">COMPANY</h3>
-                        <Link to="/about">About us</Link>
-                        <button onClick={handleDisplayMsg} className="text-left">Code of Ethics</button>
-                        <button onClick={handleDisplayMsg} className="text-left">Careers</button>
-                        <button onClick={handleDisplayMsg} className="text-left">Return Policy</button>
+                        <h3 className="font-extrabold">COMPANY</h3>
+                        <Link to="/about" className="text-left hover:underline underline-offset-4">About us</Link>
+                        <button onClick={handleDisplayMsg} className="text-left hover:underline underline-offset-4">Code of Ethics</button>
+                        <button onClick={handleDisplayMsg} className="text-left hover:underline underline-offset-4">Careers</button>
+                        <button onClick={handleDisplayMsg} className="text-left hover:underline underline-offset-4">Return Policy</button>
                     </div>
                     <div className="flex flex-col">
-                        <h3 className="font-bold">PRODUCTS</h3>
-                        <Link to="/product/coffee">Coffee</Link>
-                        <Link to="/product/tea">Tea</Link>
+                        <h3 className="font-extrabold">PRODUCTS</h3>
+                        <Link to="/product/coffee" className="text-left hover:underline underline-offset-4">Coffee</Link>
+                        <Link to="/product/tea" className="text-left hover:underline underline-offset-4">Tea</Link>
                     </div>
                     <div className="flex flex-col">
-                        <h3 className="font-bold">SOCIAL</h3>
-                        <button onClick={handleDisplayMsg} className="text-left">Facebook</button>
-                        <button onClick={handleDisplayMsg} className="text-left">Instagram</button>
-                        <button onClick={handleDisplayMsg} className="text-left">Twitter</button>
+                        <h3 className="font-extrabold">SOCIAL</h3>
+                        <button onClick={handleDisplayMsg} className="text-left hover:underline underline-offset-4">Facebook</button>
+                        <button onClick={handleDisplayMsg} className="text-left hover:underline underline-offset-4">Instagram</button>
+                        <button onClick={handleDisplayMsg} className="text-left hover:underline underline-offset-4">Twitter</button>
                     </div>
                 </div>
                 <form onSubmit={(event) => { event.preventDefault(); toast.success("Thanks for Signing Up.")} } className="flex flex-col items-center">

@@ -23,11 +23,11 @@ export default function Home() {
 
             <DealSlider items={[coffeeData[2].item[3], teaData[2].item[0], teaData[2].item[1], coffeeData[2].item[2], coffeeData[2].item[4]]} />
             
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center mb-[35px]">
                 <h1 className="mt-9 mb-4 text-center md:text-4xl text-2xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600 drop-shadow-lg">
                     Popular Products
                 </h1>
-                <div className="flex flex-wrap justify-center items-center sm:w-[80%] w-[90%] max-w-[1000px] mb-[35px]">
+                <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 max-w-[1000px]">
                     {popularProduct.map((product) => (
                         <div key={product.id} className="sm:scale-[0.85] scale-95">
                             <Item id={product.id} img={product.img} brand={product.brand} item={product.item} price={product.price} sale={product.sale} discount={product.discount} />

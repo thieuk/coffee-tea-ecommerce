@@ -27,7 +27,7 @@ export default function Item(props) {
             <h1 className="w-[80%] text-center sm:text-lg text-sm font-extrabold text-ellipsis overflow-hidden whitespace-nowrap">
                 {`${props.brand}`}
             </h1>
-            <h2 className="w-[80%] text-center sm:text-lg text-xs text-ellipsis font-bold overflow-hidden whitespace-nowrap">{`${props.item}`}</h2>
+            <h2 className="w-[80%] text-center sm:text-base text-xs text-ellipsis font-bold overflow-hidden whitespace-nowrap">{`${props.item}`}</h2>
             {props.sale ? 
                 <p>
                     <span className="text-neutral-600 mr-2 line-through">${props.price}</span>
