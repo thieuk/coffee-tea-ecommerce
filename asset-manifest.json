@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/coffee-tea-ecommerce/static/css/main.ebe5e387.css",
-    "main.js": "/coffee-tea-ecommerce/static/js/main.4915bcd8.js",
+    "main.css": "/coffee-tea-ecommerce/static/css/main.57d46c13.css",
+    "main.js": "/coffee-tea-ecommerce/static/js/main.3302c171.js",
     "static/css/333.f97b6053.chunk.css": "/coffee-tea-ecommerce/static/css/333.f97b6053.chunk.css",
     "static/js/333.d5dbba9b.chunk.js": "/coffee-tea-ecommerce/static/js/333.d5dbba9b.chunk.js",
     "static/js/964.55f0357f.chunk.js": "/coffee-tea-ecommerce/static/js/964.55f0357f.chunk.js",
@@ -40,8 +40,8 @@
     "static/media/coffee11.jpg": "/coffee-tea-ecommerce/static/media/coffee11.f31f8b7089dcd487301b.jpg",
     "static/media/coffee7.jpg": "/coffee-tea-ecommerce/static/media/coffee7.dbb38c9448df4831d370.jpg",
     "index.html": "/coffee-tea-ecommerce/index.html",
-    "main.ebe5e387.css.map": "/coffee-tea-ecommerce/static/css/main.ebe5e387.css.map",
-    "main.4915bcd8.js.map": "/coffee-tea-ecommerce/static/js/main.4915bcd8.js.map",
+    "main.57d46c13.css.map": "/coffee-tea-ecommerce/static/css/main.57d46c13.css.map",
+    "main.3302c171.js.map": "/coffee-tea-ecommerce/static/js/main.3302c171.js.map",
     "333.f97b6053.chunk.css.map": "/coffee-tea-ecommerce/static/css/333.f97b6053.chunk.css.map",
     "333.d5dbba9b.chunk.js.map": "/coffee-tea-ecommerce/static/js/333.d5dbba9b.chunk.js.map",
     "964.55f0357f.chunk.js.map": "/coffee-tea-ecommerce/static/js/964.55f0357f.chunk.js.map",
@@ -52,7 +52,7 @@
     "198.a74e8b03.chunk.js.map": "/coffee-tea-ecommerce/static/js/198.a74e8b03.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ebe5e387.css",
-    "static/js/main.4915bcd8.js"
+    "static/css/main.57d46c13.css",
+    "static/js/main.3302c171.js"
   ]
 }
