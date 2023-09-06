@@ -40,7 +40,7 @@ export default function QuantityController(props) {
                 <p className="bg-white text-center w-[40%] rounded">{handleQuantityChange(props.product.id)}</p>
                 <button onClick={() => handleIncreaseQuantity(props.product.id)} className="w-[30%] text-white font-extrabold">+</button>
             </div>
-            { props.removeButton ? <button onClick={() => handleRemoveItem(props.product.id)} className="max-sm:w-[68px] h-[30px] sm:ml-5 mt-2 px-2 rounded text-white bg-red-600 text-sm">remove</button> : <></> }
+            { props.removeButton ? <button onClick={() => handleRemoveItem(props.product.id)} className="w-[75px] h-[30px] sm:ml-5 max-sm:mt-2 px-2 rounded text-white bg-red-600 text-sm">remove</button> : <></> }
         </div>
     );
 }
