@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/coffee-tea-ecommerce/static/css/main.57d46c13.css",
-    "main.js": "/coffee-tea-ecommerce/static/js/main.3302c171.js",
+    "main.css": "/coffee-tea-ecommerce/static/css/main.53499937.css",
+    "main.js": "/coffee-tea-ecommerce/static/js/main.f324a10f.js",
     "static/css/333.f97b6053.chunk.css": "/coffee-tea-ecommerce/static/css/333.f97b6053.chunk.css",
-    "static/js/333.d5dbba9b.chunk.js": "/coffee-tea-ecommerce/static/js/333.d5dbba9b.chunk.js",
+    "static/js/333.e022170d.chunk.js": "/coffee-tea-ecommerce/static/js/333.e022170d.chunk.js",
     "static/js/964.55f0357f.chunk.js": "/coffee-tea-ecommerce/static/js/964.55f0357f.chunk.js",
-    "static/js/562.49ae5e8b.chunk.js": "/coffee-tea-ecommerce/static/js/562.49ae5e8b.chunk.js",
-    "static/js/460.a0218f35.chunk.js": "/coffee-tea-ecommerce/static/js/460.a0218f35.chunk.js",
+    "static/js/562.7417e681.chunk.js": "/coffee-tea-ecommerce/static/js/562.7417e681.chunk.js",
+    "static/js/460.0285158d.chunk.js": "/coffee-tea-ecommerce/static/js/460.0285158d.chunk.js",
     "static/js/707.607bd3e8.chunk.js": "/coffee-tea-ecommerce/static/js/707.607bd3e8.chunk.js",
     "static/js/922.5ce4b723.chunk.js": "/coffee-tea-ecommerce/static/js/922.5ce4b723.chunk.js",
-    "static/js/198.a74e8b03.chunk.js": "/coffee-tea-ecommerce/static/js/198.a74e8b03.chunk.js",
+    "static/js/198.75aa4ca4.chunk.js": "/coffee-tea-ecommerce/static/js/198.75aa4ca4.chunk.js",
     "static/media/home-hero.png": "/coffee-tea-ecommerce/static/media/home-hero.c7bc3387dbf75879cbea.png",
     "static/media/coffee-hero-img.png": "/coffee-tea-ecommerce/static/media/coffee-hero-img.7b0d006697ccb3a56b13.png",
     "static/media/home-b-hero.png": "/coffee-tea-ecommerce/static/media/home-b-hero.da1b4698f34c50696e70.png",
@@ -40,19 +40,19 @@
     "static/media/coffee11.jpg": "/coffee-tea-ecommerce/static/media/coffee11.f31f8b7089dcd487301b.jpg",
     "static/media/coffee7.jpg": "/coffee-tea-ecommerce/static/media/coffee7.dbb38c9448df4831d370.jpg",
     "index.html": "/coffee-tea-ecommerce/index.html",
-    "main.57d46c13.css.map": "/coffee-tea-ecommerce/static/css/main.57d46c13.css.map",
-    "main.3302c171.js.map": "/coffee-tea-ecommerce/static/js/main.3302c171.js.map",
+    "main.53499937.css.map": "/coffee-tea-ecommerce/static/css/main.53499937.css.map",
+    "main.f324a10f.js.map": "/coffee-tea-ecommerce/static/js/main.f324a10f.js.map",
     "333.f97b6053.chunk.css.map": "/coffee-tea-ecommerce/static/css/333.f97b6053.chunk.css.map",
-    "333.d5dbba9b.chunk.js.map": "/coffee-tea-ecommerce/static/js/333.d5dbba9b.chunk.js.map",
+    "333.e022170d.chunk.js.map": "/coffee-tea-ecommerce/static/js/333.e022170d.chunk.js.map",
     "964.55f0357f.chunk.js.map": "/coffee-tea-ecommerce/static/js/964.55f0357f.chunk.js.map",
-    "562.49ae5e8b.chunk.js.map": "/coffee-tea-ecommerce/static/js/562.49ae5e8b.chunk.js.map",
-    "460.a0218f35.chunk.js.map": "/coffee-tea-ecommerce/static/js/460.a0218f35.chunk.js.map",
+    "562.7417e681.chunk.js.map": "/coffee-tea-ecommerce/static/js/562.7417e681.chunk.js.map",
+    "460.0285158d.chunk.js.map": "/coffee-tea-ecommerce/static/js/460.0285158d.chunk.js.map",
     "707.607bd3e8.chunk.js.map": "/coffee-tea-ecommerce/static/js/707.607bd3e8.chunk.js.map",
     "922.5ce4b723.chunk.js.map": "/coffee-tea-ecommerce/static/js/922.5ce4b723.chunk.js.map",
-    "198.a74e8b03.chunk.js.map": "/coffee-tea-ecommerce/static/js/198.a74e8b03.chunk.js.map"
+    "198.75aa4ca4.chunk.js.map": "/coffee-tea-ecommerce/static/js/198.75aa4ca4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.57d46c13.css",
-    "static/js/main.3302c171.js"
+    "static/css/main.53499937.css",
+    "static/js/main.f324a10f.js"
   ]
 }
