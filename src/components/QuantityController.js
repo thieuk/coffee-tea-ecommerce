@@ -35,10 +35,10 @@ export default function QuantityController(props) {
 
     return (
         <div className="flex max-sm:flex-col mt-2">
-            <div className="flex w-[75px] h-full border-y-4 border-blue-600 bg-blue-600 rounded">
-                <button onClick={() => handleDecreaseQuantity(props.product.id)} className="w-[30%] text-white font-extrabold">-</button>
-                <p className="bg-white text-center w-[40%] rounded">{handleQuantityChange(props.product.id)}</p>
-                <button onClick={() => handleIncreaseQuantity(props.product.id)} className="w-[30%] text-white font-extrabold">+</button>
+            <div className="flex w-[75px] h-full border-y-4 border-neutral-600 bg-neutral-600 rounded">
+                <button onClick={() => handleDecreaseQuantity(props.product.id)} className="w-[30%] text-white font-extrabold !font-mono">-</button>
+                <p className="font-medium bg-white text-center w-[40%] rounded">{handleQuantityChange(props.product.id)}</p>
+                <button onClick={() => handleIncreaseQuantity(props.product.id)} className="w-[30%] text-white font-extrabold !font-mono">+</button>
             </div>
             { props.removeButton ? <button onClick={() => handleRemoveItem(props.product.id)} className="w-[75px] h-[30px] sm:ml-5 max-sm:mt-2 px-2 rounded text-white bg-red-600 text-sm">remove</button> : <></> }
         </div>

@@ -8,14 +8,14 @@ export default function Product() {
     let itemData = [];
 
     if (id === "coffee") itemData = coffeeData;
-    if (id === "tea") itemData = teaData;
+    else itemData = teaData;
 
     return (
         <div className="min-h-[calc(100vh-280px)]">
             { <img src={require(`../img/${itemData[0].hero}`)} alt="hero img" className="w-screen" /> }
             <div className="relative flex">
                 <Filter itemData={itemData}/>
-                <div className="flex flex-wrap w-full justify-center mt-5 gap-12 max-sm:gap-5">
+                <div className="grid xl:grid-cols-4 lg:grid-cols-3 grid-cols-2 w-fit justify-items-center gap-10 mt-10 mx-auto">
                     { itemData[2].item.map((data) => (
                         <Item key={data.id} img={data.img} brand={data.brand} item={data.item} price={data.price} id={data.id} sale={data.sale} discount={data.discount} />
                     )) }

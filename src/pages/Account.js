@@ -37,7 +37,7 @@ export default function Account() {
                         <input type="password" id="reenter-password" placeholder="Re-enter password" required className="mt-5 border-2 border-purple-900 p-1 rounded shadow-lg shadow-purple-200"/>
                         <button onClick={(event) => { event.preventDefault(); handleDisplayMsg()}} type="submit" className="w-fit bg-amber-400 hover:bg-amber-500 py-2 px-3 font-bold rounded mt-4 mx-auto shadow-lg">SIGN UP</button>
                     </form>
-                    <p className="mt-5 text-center">Already a user? <span className="underline font-bold hover:cursor-pointer" onClick={chgForm}>LOGIN</span></p>
+                    <p className="mt-5 text-center">Already a user? <span className="underline font-bold cursor-pointer" onClick={chgForm}>LOGIN</span></p>
                 </div>
                 <div id="signin" className="flex flex-col justify-center w-[240px] sm:scale-100 scale-90">
                     <h1 className="font-bold text-2xl text-center text-purple-900">LOGIN</h1>
@@ -45,7 +45,7 @@ export default function Account() {
                         <input type="email" id="signup-username" placeholder="Username" required autoComplete="email" className="mt-5 border-2 border-purple-900 p-1 rounded shadow-lg shadow-purple-200"/>
                         <input type="password" id="new-password" placeholder="Password" required className="mt-5 border-2 border-purple-900 p-1 rounded shadow-lg shadow-purple-200"/>
                         <button onClick={(event) => { event.preventDefault(); handleDisplayMsg()}} type="submit" className="w-fit bg-amber-400 hover:bg-amber-500 py-2 px-3 font-bold rounded mt-4 mx-auto">SIGN IN</button>
-                        <p className="mt-4 text-center underline underline-offset-2">Forgot Password?</p>
+                        <p className="mt-4 text-center underline underline-offset-2 cursor-pointer">Forgot Password?</p>
                         <div className="flex flex-col items-center mt-7">
                             <hr className="w-full border-t-4 border-purple-800" />
                             <span className="bg-white px-2 mt-[-15px]">or</span>
@@ -55,7 +55,7 @@ export default function Account() {
                             <span className="text-sm">Sign In with Google</span>
                         </button>
                     </form>
-                    <p className="mt-5 text-center">Need an account? <span className="underline font-bold hover:cursor-pointer" onClick={chgForm}>SIGN UP</span></p>
+                    <p className="mt-5 text-center">Need an account? <span className="underline font-bold cursor-pointer" onClick={chgForm}>SIGN UP</span></p>
                 </div>
             </div>
         </div>
