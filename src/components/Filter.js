@@ -26,14 +26,15 @@ export default function Filter(props) {
                     { props.itemData[1].filter.map((data) => (
                         <>
                             <h2 className="font-bold text-md py-2">{data.category}</h2>
-
                             {data.subCategory.map((sub) => (
                                 <div>
-                                    <input type="checkbox" id={`${data}-${sub.replace(" ", "-")}`} value={sub} 
-                                        className="border-[1px] border-black mr-1"/>
+                                    <input type="checkbox" id={`${data}-${sub.replace(" ", "-")}`} value={sub} className="border-[1px] border-black mr-1"/>
                                     <label htmlFor={`${data}-${sub.replace(" ", "-")}`}>{sub}</label>
                                 </div>
                             ))}
+                            {document.querySelectorAll("input[type=checkbox]").forEach(item => {
+                                item.checked = false
+                            })}
                         </>
                     )) }
                 </div>
